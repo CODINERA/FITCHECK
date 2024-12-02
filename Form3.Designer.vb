@@ -32,17 +32,18 @@ Partial Class Form3
         Me.Guna2CircleButton1 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel14 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel12 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2TextBox6 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox5 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox4 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2Panel11 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel12 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel13 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -50,8 +51,11 @@ Partial Class Form3
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2HtmlLabel16 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2HtmlLabel15 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
@@ -64,13 +68,15 @@ Partial Class Form3
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
-        Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.Guna2Panel8.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
+        Me.Guna2Panel10.SuspendLayout()
+        Me.Guna2Panel7.SuspendLayout()
+        Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel9.SuspendLayout()
         Me.SuspendLayout()
@@ -190,23 +196,31 @@ Partial Class Form3
         Me.Guna2Panel4.Controls.Add(Me.Guna2HtmlLabel11)
         Me.Guna2Panel4.Controls.Add(Me.Guna2HtmlLabel10)
         Me.Guna2Panel4.Controls.Add(Me.Guna2HtmlLabel9)
-        Me.Guna2Panel4.Controls.Add(Me.Guna2TextBox6)
-        Me.Guna2Panel4.Controls.Add(Me.Guna2TextBox5)
-        Me.Guna2Panel4.Controls.Add(Me.Guna2TextBox4)
-        Me.Guna2Panel4.Controls.Add(Me.Guna2TextBox3)
         Me.Guna2Panel4.Controls.Add(Me.Guna2HtmlLabel7)
         Me.Guna2Panel4.Controls.Add(Me.Guna2HtmlLabel6)
+        Me.Guna2Panel4.Controls.Add(Me.Guna2Panel11)
+        Me.Guna2Panel4.Controls.Add(Me.Guna2Panel12)
+        Me.Guna2Panel4.Controls.Add(Me.Guna2Panel13)
+        Me.Guna2Panel4.Controls.Add(Me.Guna2Panel14)
         Me.Guna2Panel4.Location = New System.Drawing.Point(769, 97)
         Me.Guna2Panel4.Name = "Guna2Panel4"
         Me.Guna2Panel4.Size = New System.Drawing.Size(214, 414)
         Me.Guna2Panel4.TabIndex = 3
+        '
+        'Guna2Panel14
+        '
+        Me.Guna2Panel14.FillColor = System.Drawing.Color.LightBlue
+        Me.Guna2Panel14.Location = New System.Drawing.Point(24, 319)
+        Me.Guna2Panel14.Name = "Guna2Panel14"
+        Me.Guna2Panel14.Size = New System.Drawing.Size(170, 70)
+        Me.Guna2Panel14.TabIndex = 7
         '
         'Guna2HtmlLabel12
         '
         Me.Guna2HtmlLabel12.BackColor = System.Drawing.Color.LightBlue
         Me.Guna2HtmlLabel12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel12.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel12.Location = New System.Drawing.Point(26, 319)
+        Me.Guna2HtmlLabel12.Location = New System.Drawing.Point(30, 323)
         Me.Guna2HtmlLabel12.Name = "Guna2HtmlLabel12"
         Me.Guna2HtmlLabel12.Size = New System.Drawing.Size(42, 18)
         Me.Guna2HtmlLabel12.TabIndex = 10
@@ -217,7 +231,7 @@ Partial Class Form3
         Me.Guna2HtmlLabel11.BackColor = System.Drawing.Color.LightBlue
         Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel11.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(26, 235)
+        Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(31, 239)
         Me.Guna2HtmlLabel11.Name = "Guna2HtmlLabel11"
         Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(41, 18)
         Me.Guna2HtmlLabel11.TabIndex = 9
@@ -228,7 +242,7 @@ Partial Class Form3
         Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.LightBlue
         Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel10.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(26, 148)
+        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(30, 153)
         Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
         Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(38, 18)
         Me.Guna2HtmlLabel10.TabIndex = 8
@@ -239,99 +253,11 @@ Partial Class Form3
         Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.LightBlue
         Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(26, 60)
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(31, 64)
         Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
         Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(60, 18)
         Me.Guna2HtmlLabel9.TabIndex = 5
         Me.Guna2HtmlLabel9.Text = "Breakfast"
-        '
-        'Guna2TextBox6
-        '
-        Me.Guna2TextBox6.BorderColor = System.Drawing.SystemColors.Control
-        Me.Guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox6.DefaultText = ""
-        Me.Guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox6.FillColor = System.Drawing.Color.LightBlue
-        Me.Guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox6.Location = New System.Drawing.Point(24, 318)
-        Me.Guna2TextBox6.Name = "Guna2TextBox6"
-        Me.Guna2TextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox6.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox6.PlaceholderText = ""
-        Me.Guna2TextBox6.SelectedText = ""
-        Me.Guna2TextBox6.Size = New System.Drawing.Size(170, 70)
-        Me.Guna2TextBox6.TabIndex = 7
-        '
-        'Guna2TextBox5
-        '
-        Me.Guna2TextBox5.BorderColor = System.Drawing.SystemColors.Control
-        Me.Guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox5.DefaultText = ""
-        Me.Guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox5.FillColor = System.Drawing.Color.LightBlue
-        Me.Guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox5.Location = New System.Drawing.Point(24, 233)
-        Me.Guna2TextBox5.Name = "Guna2TextBox5"
-        Me.Guna2TextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox5.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox5.PlaceholderText = ""
-        Me.Guna2TextBox5.SelectedText = ""
-        Me.Guna2TextBox5.Size = New System.Drawing.Size(170, 70)
-        Me.Guna2TextBox5.TabIndex = 6
-        '
-        'Guna2TextBox4
-        '
-        Me.Guna2TextBox4.BorderColor = System.Drawing.SystemColors.Control
-        Me.Guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox4.DefaultText = ""
-        Me.Guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox4.FillColor = System.Drawing.Color.LightBlue
-        Me.Guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox4.Location = New System.Drawing.Point(24, 146)
-        Me.Guna2TextBox4.Name = "Guna2TextBox4"
-        Me.Guna2TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox4.PlaceholderText = ""
-        Me.Guna2TextBox4.SelectedText = ""
-        Me.Guna2TextBox4.Size = New System.Drawing.Size(170, 70)
-        Me.Guna2TextBox4.TabIndex = 5
-        '
-        'Guna2TextBox3
-        '
-        Me.Guna2TextBox3.BorderColor = System.Drawing.SystemColors.Control
-        Me.Guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox3.DefaultText = ""
-        Me.Guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox3.FillColor = System.Drawing.Color.LightBlue
-        Me.Guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.Location = New System.Drawing.Point(24, 59)
-        Me.Guna2TextBox3.Name = "Guna2TextBox3"
-        Me.Guna2TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox3.PlaceholderText = ""
-        Me.Guna2TextBox3.SelectedText = ""
-        Me.Guna2TextBox3.Size = New System.Drawing.Size(170, 70)
-        Me.Guna2TextBox3.TabIndex = 4
         '
         'Guna2HtmlLabel7
         '
@@ -355,6 +281,30 @@ Partial Class Form3
         Me.Guna2HtmlLabel6.TabIndex = 4
         Me.Guna2HtmlLabel6.Text = "Meal Planner"
         '
+        'Guna2Panel11
+        '
+        Me.Guna2Panel11.FillColor = System.Drawing.Color.LightBlue
+        Me.Guna2Panel11.Location = New System.Drawing.Point(24, 60)
+        Me.Guna2Panel11.Name = "Guna2Panel11"
+        Me.Guna2Panel11.Size = New System.Drawing.Size(170, 70)
+        Me.Guna2Panel11.TabIndex = 5
+        '
+        'Guna2Panel12
+        '
+        Me.Guna2Panel12.FillColor = System.Drawing.Color.LightBlue
+        Me.Guna2Panel12.Location = New System.Drawing.Point(24, 148)
+        Me.Guna2Panel12.Name = "Guna2Panel12"
+        Me.Guna2Panel12.Size = New System.Drawing.Size(170, 70)
+        Me.Guna2Panel12.TabIndex = 6
+        '
+        'Guna2Panel13
+        '
+        Me.Guna2Panel13.FillColor = System.Drawing.Color.LightBlue
+        Me.Guna2Panel13.Location = New System.Drawing.Point(24, 235)
+        Me.Guna2Panel13.Name = "Guna2Panel13"
+        Me.Guna2Panel13.Size = New System.Drawing.Size(170, 70)
+        Me.Guna2Panel13.TabIndex = 6
+        '
         'Guna2Panel3
         '
         Me.Guna2Panel3.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_101041
@@ -368,6 +318,26 @@ Partial Class Form3
         Me.Guna2Panel3.Size = New System.Drawing.Size(457, 197)
         Me.Guna2Panel3.TabIndex = 2
         '
+        'Guna2Button8
+        '
+        Me.Guna2Button8.Animated = True
+        Me.Guna2Button8.AutoRoundedCorners = True
+        Me.Guna2Button8.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Button8.BorderRadius = 12
+        Me.Guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button8.FillColor = System.Drawing.Color.LightBlue
+        Me.Guna2Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button8.ForeColor = System.Drawing.Color.DimGray
+        Me.Guna2Button8.Location = New System.Drawing.Point(374, 10)
+        Me.Guna2Button8.Name = "Guna2Button8"
+        Me.Guna2Button8.Size = New System.Drawing.Size(70, 26)
+        Me.Guna2Button8.TabIndex = 22
+        Me.Guna2Button8.Text = "Submit"
+        Me.Guna2Button8.UseTransparentBackground = True
+        '
         'Guna2ComboBox1
         '
         Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
@@ -379,9 +349,9 @@ Partial Class Form3
         Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Guna2ComboBox1.ItemHeight = 30
         Me.Guna2ComboBox1.Items.AddRange(New Object() {"Breakfast", "Lunch", "Snack", "Dinner"})
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(266, 7)
+        Me.Guna2ComboBox1.Location = New System.Drawing.Point(234, 7)
         Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(98, 36)
+        Me.Guna2ComboBox1.Size = New System.Drawing.Size(130, 36)
         Me.Guna2ComboBox1.TabIndex = 5
         '
         'Guna2HtmlLabel5
@@ -420,6 +390,7 @@ Partial Class Form3
         Me.Guna2TextBox1.ForeColor = System.Drawing.Color.Black
         Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox1.Location = New System.Drawing.Point(24, 49)
+        Me.Guna2TextBox1.Multiline = True
         Me.Guna2TextBox1.Name = "Guna2TextBox1"
         Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox1.PlaceholderText = ""
@@ -451,27 +422,63 @@ Partial Class Form3
         '
         'Guna2Panel10
         '
+        Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel16)
         Me.Guna2Panel10.FillColor = System.Drawing.Color.SteelBlue
         Me.Guna2Panel10.Location = New System.Drawing.Point(280, 18)
         Me.Guna2Panel10.Name = "Guna2Panel10"
         Me.Guna2Panel10.Size = New System.Drawing.Size(110, 90)
         Me.Guna2Panel10.TabIndex = 1
         '
+        'Guna2HtmlLabel16
+        '
+        Me.Guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel16.Font = New System.Drawing.Font("Mongolian Baiti", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel16.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Guna2HtmlLabel16.Location = New System.Drawing.Point(19, 3)
+        Me.Guna2HtmlLabel16.Name = "Guna2HtmlLabel16"
+        Me.Guna2HtmlLabel16.Size = New System.Drawing.Size(77, 15)
+        Me.Guna2HtmlLabel16.TabIndex = 2
+        Me.Guna2HtmlLabel16.Text = "Recipe Name"
+        '
         'Guna2Panel7
         '
+        Me.Guna2Panel7.Controls.Add(Me.Guna2HtmlLabel15)
         Me.Guna2Panel7.FillColor = System.Drawing.Color.SteelBlue
         Me.Guna2Panel7.Location = New System.Drawing.Point(149, 18)
         Me.Guna2Panel7.Name = "Guna2Panel7"
         Me.Guna2Panel7.Size = New System.Drawing.Size(110, 90)
         Me.Guna2Panel7.TabIndex = 1
         '
+        'Guna2HtmlLabel15
+        '
+        Me.Guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel15.Font = New System.Drawing.Font("Mongolian Baiti", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel15.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(19, 4)
+        Me.Guna2HtmlLabel15.Name = "Guna2HtmlLabel15"
+        Me.Guna2HtmlLabel15.Size = New System.Drawing.Size(77, 15)
+        Me.Guna2HtmlLabel15.TabIndex = 1
+        Me.Guna2HtmlLabel15.Text = "Recipe Name"
+        '
         'Guna2Panel6
         '
+        Me.Guna2Panel6.Controls.Add(Me.Guna2HtmlLabel13)
         Me.Guna2Panel6.FillColor = System.Drawing.Color.SteelBlue
         Me.Guna2Panel6.Location = New System.Drawing.Point(16, 18)
         Me.Guna2Panel6.Name = "Guna2Panel6"
         Me.Guna2Panel6.Size = New System.Drawing.Size(110, 90)
         Me.Guna2Panel6.TabIndex = 0
+        '
+        'Guna2HtmlLabel13
+        '
+        Me.Guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel13.Font = New System.Drawing.Font("Mongolian Baiti", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel13.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Guna2HtmlLabel13.Location = New System.Drawing.Point(17, 3)
+        Me.Guna2HtmlLabel13.Name = "Guna2HtmlLabel13"
+        Me.Guna2HtmlLabel13.Size = New System.Drawing.Size(77, 15)
+        Me.Guna2HtmlLabel13.TabIndex = 0
+        Me.Guna2HtmlLabel13.Text = "Recipe Name"
         '
         'Guna2HtmlLabel4
         '
@@ -676,26 +683,6 @@ Partial Class Form3
         Me.Guna2HtmlLabel1.TabIndex = 15
         Me.Guna2HtmlLabel1.Text = "FitCheck"
         '
-        'Guna2Button8
-        '
-        Me.Guna2Button8.Animated = True
-        Me.Guna2Button8.AutoRoundedCorners = True
-        Me.Guna2Button8.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button8.BorderRadius = 12
-        Me.Guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button8.FillColor = System.Drawing.Color.LightBlue
-        Me.Guna2Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button8.ForeColor = System.Drawing.Color.DimGray
-        Me.Guna2Button8.Location = New System.Drawing.Point(374, 10)
-        Me.Guna2Button8.Name = "Guna2Button8"
-        Me.Guna2Button8.Size = New System.Drawing.Size(70, 26)
-        Me.Guna2Button8.TabIndex = 22
-        Me.Guna2Button8.Text = "Back"
-        Me.Guna2Button8.UseTransparentBackground = True
-        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -715,6 +702,12 @@ Partial Class Form3
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel2.PerformLayout()
         Me.Guna2Panel5.ResumeLayout(False)
+        Me.Guna2Panel10.ResumeLayout(False)
+        Me.Guna2Panel10.PerformLayout()
+        Me.Guna2Panel7.ResumeLayout(False)
+        Me.Guna2Panel7.PerformLayout()
+        Me.Guna2Panel6.ResumeLayout(False)
+        Me.Guna2Panel6.PerformLayout()
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel9.ResumeLayout(False)
         Me.Guna2Panel9.PerformLayout()
@@ -734,10 +727,6 @@ Partial Class Form3
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2TextBox3 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox6 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox5 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox4 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel8 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel9 As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -764,4 +753,11 @@ Partial Class Form3
     Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
     Friend WithEvents Guna2Button8 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2HtmlLabel13 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel16 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel15 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2Panel11 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel12 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel13 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel14 As Guna.UI2.WinForms.Guna2Panel
 End Class
