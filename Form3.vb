@@ -1,18 +1,14 @@
 ﻿Public Class Form3
     Private Sub Guna2Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel2.Paint
-
     End Sub
 
     Private Sub Guna2Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel4.Paint
-
     End Sub
 
     Private Sub Guna2Panel8_Paint(sender As Object, e As PaintEventArgs)
-
     End Sub
 
     Private Sub Guna2GradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2GradientPanel1.Paint
-
     End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
@@ -52,5 +48,8 @@
         nextForm.StartPosition = FormStartPosition.CenterScreen
         nextForm.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Guna2Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel3.Paint
     End Sub
 End Class
