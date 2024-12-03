@@ -1,4 +1,12 @@
 ﻿Public Class Form9
+    Public Sub SetRecipeText(text As String)
+        ' Assuming Form9 has a TextBox named TextBox1 to display the text
+        Guna2TextBox1.Multiline = True
+        Guna2TextBox1.ScrollBars = ScrollBars.Vertical ' Enable vertical scrolling
+        Guna2TextBox1.ReadOnly = True ' Make the TextBox read-only
+        Guna2TextBox1.Text = text
+    End Sub
+
 
     ' In Form9 (or any other form from where you want to navigate back to Form3)
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click

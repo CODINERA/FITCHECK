@@ -32,7 +32,6 @@ Partial Class Form3
         Me.Guna2CircleButton1 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel14 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel12 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -42,6 +41,7 @@ Partial Class Form3
         Me.Guna2Panel11 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel12 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel13 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel14 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
@@ -207,20 +207,12 @@ Partial Class Form3
         Me.Guna2Panel4.Size = New System.Drawing.Size(214, 414)
         Me.Guna2Panel4.TabIndex = 3
         '
-        'Guna2Panel14
-        '
-        Me.Guna2Panel14.FillColor = System.Drawing.Color.LightBlue
-        Me.Guna2Panel14.Location = New System.Drawing.Point(24, 319)
-        Me.Guna2Panel14.Name = "Guna2Panel14"
-        Me.Guna2Panel14.Size = New System.Drawing.Size(170, 70)
-        Me.Guna2Panel14.TabIndex = 7
-        '
         'Guna2HtmlLabel12
         '
-        Me.Guna2HtmlLabel12.BackColor = System.Drawing.Color.LightBlue
+        Me.Guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel12.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel12.Location = New System.Drawing.Point(30, 323)
+        Me.Guna2HtmlLabel12.Location = New System.Drawing.Point(26, 311)
         Me.Guna2HtmlLabel12.Name = "Guna2HtmlLabel12"
         Me.Guna2HtmlLabel12.Size = New System.Drawing.Size(42, 18)
         Me.Guna2HtmlLabel12.TabIndex = 10
@@ -228,10 +220,10 @@ Partial Class Form3
         '
         'Guna2HtmlLabel11
         '
-        Me.Guna2HtmlLabel11.BackColor = System.Drawing.Color.LightBlue
+        Me.Guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel11.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(31, 239)
+        Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(25, 220)
         Me.Guna2HtmlLabel11.Name = "Guna2HtmlLabel11"
         Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(41, 18)
         Me.Guna2HtmlLabel11.TabIndex = 9
@@ -239,10 +231,10 @@ Partial Class Form3
         '
         'Guna2HtmlLabel10
         '
-        Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.LightBlue
+        Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel10.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(30, 153)
+        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(27, 131)
         Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
         Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(38, 18)
         Me.Guna2HtmlLabel10.TabIndex = 8
@@ -250,10 +242,10 @@ Partial Class Form3
         '
         'Guna2HtmlLabel9
         '
-        Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.LightBlue
+        Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(31, 64)
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(27, 40)
         Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
         Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(60, 18)
         Me.Guna2HtmlLabel9.TabIndex = 5
@@ -264,7 +256,7 @@ Partial Class Form3
         Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(47, 31)
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(45, 20)
         Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
         Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(127, 15)
         Me.Guna2HtmlLabel7.TabIndex = 4
@@ -275,7 +267,7 @@ Partial Class Form3
         Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(53, 10)
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(62, 2)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
         Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(89, 20)
         Me.Guna2HtmlLabel6.TabIndex = 4
@@ -284,7 +276,7 @@ Partial Class Form3
         'Guna2Panel11
         '
         Me.Guna2Panel11.FillColor = System.Drawing.Color.LightBlue
-        Me.Guna2Panel11.Location = New System.Drawing.Point(24, 60)
+        Me.Guna2Panel11.Location = New System.Drawing.Point(24, 59)
         Me.Guna2Panel11.Name = "Guna2Panel11"
         Me.Guna2Panel11.Size = New System.Drawing.Size(170, 70)
         Me.Guna2Panel11.TabIndex = 5
@@ -300,10 +292,18 @@ Partial Class Form3
         'Guna2Panel13
         '
         Me.Guna2Panel13.FillColor = System.Drawing.Color.LightBlue
-        Me.Guna2Panel13.Location = New System.Drawing.Point(24, 235)
+        Me.Guna2Panel13.Location = New System.Drawing.Point(24, 238)
         Me.Guna2Panel13.Name = "Guna2Panel13"
         Me.Guna2Panel13.Size = New System.Drawing.Size(170, 70)
         Me.Guna2Panel13.TabIndex = 6
+        '
+        'Guna2Panel14
+        '
+        Me.Guna2Panel14.FillColor = System.Drawing.Color.LightBlue
+        Me.Guna2Panel14.Location = New System.Drawing.Point(24, 330)
+        Me.Guna2Panel14.Name = "Guna2Panel14"
+        Me.Guna2Panel14.Size = New System.Drawing.Size(170, 70)
+        Me.Guna2Panel14.TabIndex = 7
         '
         'Guna2Panel3
         '
@@ -348,7 +348,6 @@ Partial Class Form3
         Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Guna2ComboBox1.ItemHeight = 30
-        Me.Guna2ComboBox1.Items.AddRange(New Object() {"Breakfast", "Lunch", "Snack", "Dinner"})
         Me.Guna2ComboBox1.Location = New System.Drawing.Point(234, 7)
         Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
         Me.Guna2ComboBox1.Size = New System.Drawing.Size(130, 36)
@@ -434,11 +433,11 @@ Partial Class Form3
         Me.Guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel16.Font = New System.Drawing.Font("Mongolian Baiti", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel16.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Guna2HtmlLabel16.Location = New System.Drawing.Point(19, 3)
+        Me.Guna2HtmlLabel16.Location = New System.Drawing.Point(9, 3)
         Me.Guna2HtmlLabel16.Name = "Guna2HtmlLabel16"
-        Me.Guna2HtmlLabel16.Size = New System.Drawing.Size(77, 15)
+        Me.Guna2HtmlLabel16.Size = New System.Drawing.Size(89, 15)
         Me.Guna2HtmlLabel16.TabIndex = 2
-        Me.Guna2HtmlLabel16.Text = "Recipe Name"
+        Me.Guna2HtmlLabel16.Text = "Chicken Tinola"
         '
         'Guna2Panel7
         '
@@ -454,11 +453,11 @@ Partial Class Form3
         Me.Guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel15.Font = New System.Drawing.Font("Mongolian Baiti", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel15.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(19, 4)
+        Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(16, 3)
         Me.Guna2HtmlLabel15.Name = "Guna2HtmlLabel15"
-        Me.Guna2HtmlLabel15.Size = New System.Drawing.Size(77, 15)
+        Me.Guna2HtmlLabel15.Size = New System.Drawing.Size(79, 15)
         Me.Guna2HtmlLabel15.TabIndex = 1
-        Me.Guna2HtmlLabel15.Text = "Recipe Name"
+        Me.Guna2HtmlLabel15.Text = "Fried Liempo"
         '
         'Guna2Panel6
         '
@@ -474,11 +473,11 @@ Partial Class Form3
         Me.Guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel13.Font = New System.Drawing.Font("Mongolian Baiti", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel13.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Guna2HtmlLabel13.Location = New System.Drawing.Point(17, 3)
+        Me.Guna2HtmlLabel13.Location = New System.Drawing.Point(22, 3)
         Me.Guna2HtmlLabel13.Name = "Guna2HtmlLabel13"
-        Me.Guna2HtmlLabel13.Size = New System.Drawing.Size(77, 15)
+        Me.Guna2HtmlLabel13.Size = New System.Drawing.Size(60, 15)
         Me.Guna2HtmlLabel13.TabIndex = 0
-        Me.Guna2HtmlLabel13.Text = "Recipe Name"
+        Me.Guna2HtmlLabel13.Text = "Beef Tapa"
         '
         'Guna2HtmlLabel4
         '
