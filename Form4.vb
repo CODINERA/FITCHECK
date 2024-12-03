@@ -1,12 +1,9 @@
-﻿Public Class Form4
-    Private Sub Guna2Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel3.Paint
+﻿Imports System.Globalization
+Imports MySql.Data.MySqlClient
 
-    End Sub
-
-    Private Sub Guna2HtmlLabel3_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel3.Click
-
-    End Sub
-
+Public Class Form4
+    Dim month As Integer
+    Dim year As Integer
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         Dim nextForm As New Form1()
         nextForm.StartPosition = FormStartPosition.CenterScreen
@@ -48,5 +45,105 @@
         nextForm.StartPosition = FormStartPosition.CenterScreen
         nextForm.Show()
         Me.Hide()
+    End Sub
+    Private Sub dispDays()
+        Dim now As DateTime = DateTime.Now
+        month = DateTime.Now.Month
+        year = DateTime.Now.Year
+
+        Dim monthname As String = DateTimeFormatInfo.CurrentInfo.GetMonthName(month)
+        lbldate.Text = monthname & " " & year
+        Dim Startofthemonth = New DateTime(year, month, 1)
+
+        Dim days = DateTime.DaysInMonth(year, month)
+        Dim daysoftheweek = Convert.ToInt32(Startofthemonth.DayOfWeek.ToString("d")) + 1
+        'DateTime Now = DateTime.Now
+        For i = 1 To daysoftheweek - 1
+            Dim ucblank = New UserControlBlank()
+
+            daycontainer.Controls.Add(ucblank)
+        Next i
+
+        For i = 1 To days
+            Dim ucdays As New UserControlDays()
+            ucdays.days(i)
+            daycontainer.Controls.Add(ucdays)
+        Next i
+    End Sub
+
+    Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Set the start position to center screen
+        Me.StartPosition = FormStartPosition.CenterScreen
+
+        dispDays()
+    End Sub
+
+    Private Sub lblNext_Click(sender As Object, e As EventArgs) Handles lblNext.Click
+        'clear container
+        daycontainer.Controls.Clear()
+
+        'increment month to go to next month
+        month += 1
+
+        If month > 12 Then
+            month = 1
+            year += 1
+        End If
+
+        Dim monthname As String = DateTimeFormatInfo.CurrentInfo.GetMonthName(month)
+        lbldate.Text = monthname & " " & year
+
+        Dim Startofthemonth = New DateTime(year, month, 1)
+
+        Dim days = DateTime.DaysInMonth(year, month)
+        Dim daysoftheweek = Convert.ToInt32(Startofthemonth.DayOfWeek.ToString("d")) + 1
+        'DateTime Now = DateTime.Now
+        For i = 1 To daysoftheweek - 1
+            Dim ucblank = New UserControlBlank()
+
+            daycontainer.Controls.Add(ucblank)
+        Next i
+
+        For i = 1 To days
+            Dim ucdays As New UserControlDays()
+            ucdays.days(i)
+            daycontainer.Controls.Add(ucdays)
+        Next i
+    End Sub
+
+    Private Sub lblPrev_Click(sender As Object, e As EventArgs) Handles lblPrev.Click
+        daycontainer.Controls.Clear()
+
+        'decrement month to go to prev month
+        month -= 1
+
+        If month < 1 Then
+            month = 12
+            year -= 1
+        End If
+
+        Dim monthname As String = DateTimeFormatInfo.CurrentInfo.GetMonthName(month)
+        lbldate.Text = monthname & " " & year
+
+        Dim Startofthemonth = New DateTime(year, month, 1)
+
+        Dim days = DateTime.DaysInMonth(year, month)
+        Dim daysoftheweek = Convert.ToInt32(Startofthemonth.DayOfWeek.ToString("d")) + 1
+        'DateTime Now = DateTime.Now
+        For i = 1 To daysoftheweek - 1
+            Dim ucblank = New UserControlBlank()
+
+            daycontainer.Controls.Add(ucblank)
+        Next i
+
+        For i = 1 To days
+            Dim ucdays As New UserControlDays()
+            ucdays.days(i)
+            daycontainer.Controls.Add(ucdays)
+        Next i
+    End Sub
+
+    Private Sub daycontainer_Paint(sender As Object, e As PaintEventArgs) Handles daycontainer.Paint
+
     End Sub
 End Class

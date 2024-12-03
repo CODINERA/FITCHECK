@@ -25,15 +25,25 @@ Partial Class Form4
         Me.components = New System.ComponentModel.Container()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.lbldate = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.lblPrev = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.lblNext = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.daycontainer = New System.Windows.Forms.FlowLayoutPanel()
         Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2CircleButton1 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
@@ -45,6 +55,7 @@ Partial Class Form4
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1.SuspendLayout()
+        Me.Guna2Panel3.SuspendLayout()
         Me.Guna2Panel8.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel9.SuspendLayout()
@@ -58,18 +69,199 @@ Partial Class Form4
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel1.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_093852
+        Me.Guna2Panel1.Controls.Add(Me.lbldate)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel1)
+        Me.Guna2Panel1.Controls.Add(Me.lblPrev)
+        Me.Guna2Panel1.Controls.Add(Me.lblNext)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel3)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel3)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel8)
         Me.Guna2Panel1.Controls.Add(Me.Guna2CircleButton1)
         Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel9)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel3)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel2)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel1)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel3)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, -1)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1011, 523)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1011, 524)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'lbldate
+        '
+        Me.lbldate.BackColor = System.Drawing.Color.Transparent
+        Me.lbldate.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbldate.ForeColor = System.Drawing.Color.White
+        Me.lbldate.Location = New System.Drawing.Point(548, 74)
+        Me.lbldate.Name = "lbldate"
+        Me.lbldate.Size = New System.Drawing.Size(112, 20)
+        Me.lbldate.TabIndex = 37
+        Me.lbldate.Text = "MONTH YEAR"
+        Me.lbldate.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(255, 29)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(199, 30)
+        Me.Guna2HtmlLabel1.TabIndex = 36
+        Me.Guna2HtmlLabel1.Text = "Fitness Calendar"
+        '
+        'lblPrev
+        '
+        Me.lblPrev.Animated = True
+        Me.lblPrev.BackColor = System.Drawing.Color.Transparent
+        Me.lblPrev.BorderRadius = 10
+        Me.lblPrev.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.lblPrev.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.lblPrev.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.lblPrev.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.lblPrev.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.lblPrev.FillColor = System.Drawing.Color.DarkSlateGray
+        Me.lblPrev.FillColor2 = System.Drawing.Color.DarkSeaGreen
+        Me.lblPrev.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrev.ForeColor = System.Drawing.Color.White
+        Me.lblPrev.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
+        Me.lblPrev.Location = New System.Drawing.Point(255, 74)
+        Me.lblPrev.Name = "lblPrev"
+        Me.lblPrev.ShadowDecoration.BorderRadius = 3
+        Me.lblPrev.Size = New System.Drawing.Size(62, 26)
+        Me.lblPrev.TabIndex = 40
+        Me.lblPrev.Text = "Prev"
+        '
+        'lblNext
+        '
+        Me.lblNext.Animated = True
+        Me.lblNext.BackColor = System.Drawing.Color.Transparent
+        Me.lblNext.BorderRadius = 10
+        Me.lblNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.lblNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.lblNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.lblNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.lblNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.lblNext.FillColor = System.Drawing.Color.DarkSlateGray
+        Me.lblNext.FillColor2 = System.Drawing.Color.DarkSeaGreen
+        Me.lblNext.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNext.ForeColor = System.Drawing.Color.White
+        Me.lblNext.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
+        Me.lblNext.Location = New System.Drawing.Point(323, 74)
+        Me.lblNext.Name = "lblNext"
+        Me.lblNext.ShadowDecoration.BorderRadius = 3
+        Me.lblNext.Size = New System.Drawing.Size(62, 26)
+        Me.lblNext.TabIndex = 39
+        Me.lblNext.Text = "Next"
+        '
+        'Guna2HtmlLabel3
+        '
+        Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(255, 70)
+        Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
+        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(3, 2)
+        Me.Guna2HtmlLabel3.TabIndex = 38
+        Me.Guna2HtmlLabel3.Text = Nothing
+        '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.BackColor = System.Drawing.Color.LightBlue
+        Me.Guna2Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2Panel3.Controls.Add(Me.Label7)
+        Me.Guna2Panel3.Controls.Add(Me.Label6)
+        Me.Guna2Panel3.Controls.Add(Me.Label5)
+        Me.Guna2Panel3.Controls.Add(Me.Label4)
+        Me.Guna2Panel3.Controls.Add(Me.Label3)
+        Me.Guna2Panel3.Controls.Add(Me.Label2)
+        Me.Guna2Panel3.Controls.Add(Me.Label1)
+        Me.Guna2Panel3.Controls.Add(Me.daycontainer)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(255, 106)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(710, 398)
+        Me.Guna2Panel3.TabIndex = 35
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label7.Location = New System.Drawing.Point(610, 17)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(74, 13)
+        Me.Label7.TabIndex = 7
+        Me.Label7.Text = "SATURDAY"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label6.Location = New System.Drawing.Point(520, 17)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(52, 13)
+        Me.Label6.TabIndex = 6
+        Me.Label6.Text = "FRIDAY"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label5.Location = New System.Drawing.Point(411, 17)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(75, 13)
+        Me.Label5.TabIndex = 5
+        Me.Label5.Text = "THURSDAY"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label4.Location = New System.Drawing.Point(308, 17)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(86, 13)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "WEDNESDAY"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(221, 17)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(65, 13)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "TUESDAY"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Location = New System.Drawing.Point(129, 17)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(60, 13)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "MONDAY"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(30, 17)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "SUNDAY"
+        '
+        'daycontainer
+        '
+        Me.daycontainer.Location = New System.Drawing.Point(12, 35)
+        Me.daycontainer.Name = "daycontainer"
+        Me.daycontainer.Size = New System.Drawing.Size(690, 356)
+        Me.daycontainer.TabIndex = 0
         '
         'Guna2Panel8
         '
@@ -143,48 +335,6 @@ Partial Class Form4
         Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(195, 19)
         Me.Guna2HtmlLabel9.TabIndex = 9
         Me.Guna2HtmlLabel9.Text = "Welcome_User Bangtits69"
-        '
-        'Guna2HtmlLabel3
-        '
-        Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(583, 100)
-        Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(83, 18)
-        Me.Guna2HtmlLabel3.TabIndex = 4
-        Me.Guna2HtmlLabel3.Text = "Plan your schedule"
-        '
-        'Guna2HtmlLabel2
-        '
-        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(566, 73)
-        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(123, 30)
-        Me.Guna2HtmlLabel2.TabIndex = 3
-        Me.Guna2HtmlLabel2.Text = "November"
-        '
-        'Guna2HtmlLabel1
-        '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(288, 30)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(199, 30)
-        Me.Guna2HtmlLabel1.TabIndex = 2
-        Me.Guna2HtmlLabel1.Text = "Fitness Calendar"
-        '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.BackColor = System.Drawing.Color.LightBlue
-        Me.Guna2Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2Panel3.Location = New System.Drawing.Point(288, 120)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(681, 381)
-        Me.Guna2Panel3.TabIndex = 1
         '
         'Guna2Panel2
         '
@@ -388,9 +538,12 @@ Partial Class Form4
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form4"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form4"
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
+        Me.Guna2Panel3.ResumeLayout(False)
+        Me.Guna2Panel3.PerformLayout()
         Me.Guna2Panel8.ResumeLayout(False)
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel2.PerformLayout()
@@ -403,10 +556,6 @@ Partial Class Form4
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel9 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel9 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -421,4 +570,18 @@ Partial Class Form4
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents lbldate As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents lblPrev As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents lblNext As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents daycontainer As FlowLayoutPanel
 End Class
