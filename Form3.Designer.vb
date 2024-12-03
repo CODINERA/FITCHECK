@@ -24,6 +24,7 @@ Partial Class Form3
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
+        Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
@@ -51,10 +52,13 @@ Partial Class Form3
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel17 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel16 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel16 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel15 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel15 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -67,7 +71,6 @@ Partial Class Form3
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.Guna2Panel8.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
@@ -421,12 +424,23 @@ Partial Class Form3
         '
         'Guna2Panel10
         '
+        Me.Guna2Panel10.Controls.Add(Me.Guna2Panel17)
         Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel16)
         Me.Guna2Panel10.FillColor = System.Drawing.Color.SteelBlue
         Me.Guna2Panel10.Location = New System.Drawing.Point(280, 18)
         Me.Guna2Panel10.Name = "Guna2Panel10"
         Me.Guna2Panel10.Size = New System.Drawing.Size(110, 90)
         Me.Guna2Panel10.TabIndex = 1
+        '
+        'Guna2Panel17
+        '
+        Me.Guna2Panel17.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Chicken_Tinola
+        Me.Guna2Panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2Panel17.BorderColor = System.Drawing.Color.Black
+        Me.Guna2Panel17.Location = New System.Drawing.Point(15, 28)
+        Me.Guna2Panel17.Name = "Guna2Panel17"
+        Me.Guna2Panel17.Size = New System.Drawing.Size(78, 46)
+        Me.Guna2Panel17.TabIndex = 3
         '
         'Guna2HtmlLabel16
         '
@@ -441,12 +455,23 @@ Partial Class Form3
         '
         'Guna2Panel7
         '
+        Me.Guna2Panel7.Controls.Add(Me.Guna2Panel16)
         Me.Guna2Panel7.Controls.Add(Me.Guna2HtmlLabel15)
         Me.Guna2Panel7.FillColor = System.Drawing.Color.SteelBlue
         Me.Guna2Panel7.Location = New System.Drawing.Point(149, 18)
         Me.Guna2Panel7.Name = "Guna2Panel7"
         Me.Guna2Panel7.Size = New System.Drawing.Size(110, 90)
         Me.Guna2Panel7.TabIndex = 1
+        '
+        'Guna2Panel16
+        '
+        Me.Guna2Panel16.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Fried_Liempo
+        Me.Guna2Panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2Panel16.BorderColor = System.Drawing.Color.Black
+        Me.Guna2Panel16.Location = New System.Drawing.Point(14, 29)
+        Me.Guna2Panel16.Name = "Guna2Panel16"
+        Me.Guna2Panel16.Size = New System.Drawing.Size(78, 46)
+        Me.Guna2Panel16.TabIndex = 2
         '
         'Guna2HtmlLabel15
         '
@@ -461,12 +486,23 @@ Partial Class Form3
         '
         'Guna2Panel6
         '
+        Me.Guna2Panel6.Controls.Add(Me.Guna2Panel15)
         Me.Guna2Panel6.Controls.Add(Me.Guna2HtmlLabel13)
         Me.Guna2Panel6.FillColor = System.Drawing.Color.SteelBlue
         Me.Guna2Panel6.Location = New System.Drawing.Point(16, 18)
         Me.Guna2Panel6.Name = "Guna2Panel6"
         Me.Guna2Panel6.Size = New System.Drawing.Size(110, 90)
         Me.Guna2Panel6.TabIndex = 0
+        '
+        'Guna2Panel15
+        '
+        Me.Guna2Panel15.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Beef_Tapa
+        Me.Guna2Panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2Panel15.BorderColor = System.Drawing.Color.Black
+        Me.Guna2Panel15.Location = New System.Drawing.Point(16, 27)
+        Me.Guna2Panel15.Name = "Guna2Panel15"
+        Me.Guna2Panel15.Size = New System.Drawing.Size(78, 46)
+        Me.Guna2Panel15.TabIndex = 1
         '
         'Guna2HtmlLabel13
         '
@@ -759,4 +795,7 @@ Partial Class Form3
     Friend WithEvents Guna2Panel12 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel13 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel14 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel17 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel16 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel15 As Guna.UI2.WinForms.Guna2Panel
 End Class
