@@ -40,11 +40,16 @@ Public Class Form1
 
     ' Handler for the btnNutrition click event
     Private Sub btnNutrition_Click(sender As Object, e As EventArgs) Handles btnNutrition.Click
-        UpdateButtonAppearance(DirectCast(sender, Guna.UI2.WinForms.Guna2GradientButton))
-        Dim nextForm As New Form3()
-        nextForm.StartPosition = FormStartPosition.CenterScreen
-        nextForm.Show()
-        Me.Hide()
+        If Application.OpenForms.OfType(Of Form3).Any() Then
+            ' If Form3 is already open, bring it to the front instead of creating a new instance
+            Application.OpenForms.OfType(Of Form3).First().BringToFront()
+        Else
+            ' Otherwise, create and show a new instance
+            Dim nextForm As New Form3()
+            nextForm.StartPosition = FormStartPosition.CenterScreen
+            nextForm.Show()
+            Me.Hide()
+        End If
     End Sub
 
     ' Handler for the btnDiary click event
