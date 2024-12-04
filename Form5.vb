@@ -41,4 +41,13 @@
         nextForm.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Workout(sender As Object, e As EventArgs) Handles W3.Click, W2.Click, W1.Click, Guna2GradientPanel1.Click
+        Dim Workout As New Form6()
+        Workout.Show()
+    End Sub
+
+    Private Sub Guna2GradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2GradientPanel1.Paint
+
+    End Sub
 End Class

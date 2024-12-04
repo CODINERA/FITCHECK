@@ -25,12 +25,18 @@ Partial Class Form7
         Me.components = New System.ComponentModel.Container()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2CircleButton10 = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.Guna2CircleButton9 = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.Guna2CircleButton8 = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.Guna2CircleButton7 = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.Guna2CircleButton6 = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.backlbl = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.savelbl = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.txtDiary = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2CircleButton5 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2CircleButton4 = New Guna.UI2.WinForms.Guna2CircleButton()
@@ -38,8 +44,8 @@ Partial Class Form7
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2CircleButton1 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1.SuspendLayout()
+        Me.Guna2Panel3.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,19 +57,127 @@ Partial Class Form7
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel1.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_093852
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel3)
         Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel4)
         Me.Guna2Panel1.Controls.Add(Me.backlbl)
         Me.Guna2Panel1.Controls.Add(Me.savelbl)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2TextBox1)
+        Me.Guna2Panel1.Controls.Add(Me.txtDiary)
         Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel2)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel3)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
         Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel1)
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(753, 501)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(752, 501)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleButton10)
+        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleButton9)
+        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleButton8)
+        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleButton7)
+        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleButton6)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(408, 95)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(257, 51)
+        Me.Guna2Panel3.TabIndex = 46
+        '
+        'Guna2CircleButton10
+        '
+        Me.Guna2CircleButton10.BackgroundImage = Global.FitCheck360.My.Resources.Resources._5_removebg_preview__1_
+        Me.Guna2CircleButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2CircleButton10.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton10.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2CircleButton10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2CircleButton10.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2CircleButton10.ForeColor = System.Drawing.Color.White
+        Me.Guna2CircleButton10.Location = New System.Drawing.Point(207, 3)
+        Me.Guna2CircleButton10.Name = "Guna2CircleButton10"
+        Me.Guna2CircleButton10.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CircleButton10.Size = New System.Drawing.Size(45, 45)
+        Me.Guna2CircleButton10.TabIndex = 9
+        '
+        'Guna2CircleButton9
+        '
+        Me.Guna2CircleButton9.BackgroundImage = Global.FitCheck360.My.Resources.Resources._5_removebg_preview__1_
+        Me.Guna2CircleButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2CircleButton9.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton9.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2CircleButton9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2CircleButton9.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton9.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2CircleButton9.ForeColor = System.Drawing.Color.White
+        Me.Guna2CircleButton9.Location = New System.Drawing.Point(156, 3)
+        Me.Guna2CircleButton9.Name = "Guna2CircleButton9"
+        Me.Guna2CircleButton9.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CircleButton9.Size = New System.Drawing.Size(45, 45)
+        Me.Guna2CircleButton9.TabIndex = 8
+        '
+        'Guna2CircleButton8
+        '
+        Me.Guna2CircleButton8.BackgroundImage = Global.FitCheck360.My.Resources.Resources._5_removebg_preview__1_
+        Me.Guna2CircleButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2CircleButton8.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton8.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2CircleButton8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2CircleButton8.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2CircleButton8.ForeColor = System.Drawing.Color.White
+        Me.Guna2CircleButton8.Location = New System.Drawing.Point(105, 3)
+        Me.Guna2CircleButton8.Name = "Guna2CircleButton8"
+        Me.Guna2CircleButton8.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CircleButton8.Size = New System.Drawing.Size(45, 45)
+        Me.Guna2CircleButton8.TabIndex = 7
+        '
+        'Guna2CircleButton7
+        '
+        Me.Guna2CircleButton7.BackgroundImage = Global.FitCheck360.My.Resources.Resources._5_removebg_preview__1_
+        Me.Guna2CircleButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2CircleButton7.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2CircleButton7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2CircleButton7.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2CircleButton7.ForeColor = System.Drawing.Color.White
+        Me.Guna2CircleButton7.Location = New System.Drawing.Point(54, 3)
+        Me.Guna2CircleButton7.Name = "Guna2CircleButton7"
+        Me.Guna2CircleButton7.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CircleButton7.Size = New System.Drawing.Size(45, 45)
+        Me.Guna2CircleButton7.TabIndex = 6
+        '
+        'Guna2CircleButton6
+        '
+        Me.Guna2CircleButton6.BackgroundImage = Global.FitCheck360.My.Resources.Resources._5_removebg_preview__1_
+        Me.Guna2CircleButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2CircleButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2CircleButton6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2CircleButton6.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2CircleButton6.ForeColor = System.Drawing.Color.White
+        Me.Guna2CircleButton6.Location = New System.Drawing.Point(3, 3)
+        Me.Guna2CircleButton6.Name = "Guna2CircleButton6"
+        Me.Guna2CircleButton6.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CircleButton6.Size = New System.Drawing.Size(45, 45)
+        Me.Guna2CircleButton6.TabIndex = 5
+        '
+        'Guna2HtmlLabel4
+        '
+        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(58, 172)
+        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(57, 26)
+        Me.Guna2HtmlLabel4.TabIndex = 45
+        Me.Guna2HtmlLabel4.Text = "Diary"
         '
         'backlbl
         '
@@ -109,34 +223,34 @@ Partial Class Form7
         Me.savelbl.TabIndex = 43
         Me.savelbl.Text = "Save"
         '
-        'Guna2TextBox1
+        'txtDiary
         '
-        Me.Guna2TextBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = "Today..."
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FillColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(58, 204)
-        Me.Guna2TextBox1.Multiline = True
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderText = ""
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(639, 239)
-        Me.Guna2TextBox1.TabIndex = 42
+        Me.txtDiary.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.txtDiary.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtDiary.DefaultText = "Today..."
+        Me.txtDiary.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtDiary.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtDiary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtDiary.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtDiary.FillColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.txtDiary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtDiary.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDiary.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtDiary.Location = New System.Drawing.Point(58, 204)
+        Me.txtDiary.Multiline = True
+        Me.txtDiary.Name = "txtDiary"
+        Me.txtDiary.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtDiary.PlaceholderText = ""
+        Me.txtDiary.SelectedText = ""
+        Me.txtDiary.Size = New System.Drawing.Size(639, 239)
+        Me.txtDiary.TabIndex = 42
         '
         'Guna2HtmlLabel3
         '
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(408, 72)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(408, 75)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(87, 17)
         Me.Guna2HtmlLabel3.TabIndex = 41
@@ -152,13 +266,6 @@ Partial Class Form7
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(150, 17)
         Me.Guna2HtmlLabel2.TabIndex = 40
         Me.Guna2HtmlLabel2.Text = "How do you feel today?"
-        '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.Location = New System.Drawing.Point(408, 95)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(289, 51)
-        Me.Guna2Panel3.TabIndex = 39
         '
         'Guna2Panel2
         '
@@ -269,17 +376,6 @@ Partial Class Form7
         Me.Guna2HtmlLabel1.TabIndex = 37
         Me.Guna2HtmlLabel1.Text = "November 1, 2024"
         '
-        'Guna2HtmlLabel4
-        '
-        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(58, 172)
-        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(57, 26)
-        Me.Guna2HtmlLabel4.TabIndex = 45
-        Me.Guna2HtmlLabel4.Text = "Diary"
-        '
         'Form7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -288,9 +384,11 @@ Partial Class Form7
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form7"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form7"
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
+        Me.Guna2Panel3.ResumeLayout(False)
         Me.Guna2Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -300,10 +398,9 @@ Partial Class Form7
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents backlbl As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents savelbl As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtDiary As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2CircleButton5 As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents Guna2CircleButton4 As Guna.UI2.WinForms.Guna2CircleButton
@@ -312,4 +409,10 @@ Partial Class Form7
     Friend WithEvents Guna2CircleButton1 As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2CircleButton10 As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents Guna2CircleButton9 As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents Guna2CircleButton8 As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents Guna2CircleButton7 As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents Guna2CircleButton6 As Guna.UI2.WinForms.Guna2CircleButton
 End Class
