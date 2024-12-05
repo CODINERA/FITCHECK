@@ -25,9 +25,11 @@ Partial Class Form6
         Me.components = New System.ComponentModel.Container()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.startbtn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
+        Me.backbtn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -39,11 +41,14 @@ Partial Class Form6
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.savebtn = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.backbtn = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel8.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
+        Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -56,7 +61,7 @@ Partial Class Form6
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel1.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_093852
-        Me.Guna2Panel1.Controls.Add(Me.savebtn)
+        Me.Guna2Panel1.Controls.Add(Me.startbtn)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel8)
         Me.Guna2Panel1.Controls.Add(Me.backbtn)
         Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel7)
@@ -69,6 +74,28 @@ Partial Class Form6
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(800, 453)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'startbtn
+        '
+        Me.startbtn.Animated = True
+        Me.startbtn.BackColor = System.Drawing.Color.Transparent
+        Me.startbtn.BorderRadius = 10
+        Me.startbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.startbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.startbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.startbtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.startbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.startbtn.FillColor = System.Drawing.Color.DarkSlateGray
+        Me.startbtn.FillColor2 = System.Drawing.Color.DarkSeaGreen
+        Me.startbtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.startbtn.ForeColor = System.Drawing.Color.White
+        Me.startbtn.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
+        Me.startbtn.Location = New System.Drawing.Point(602, 373)
+        Me.startbtn.Name = "startbtn"
+        Me.startbtn.ShadowDecoration.BorderRadius = 3
+        Me.startbtn.Size = New System.Drawing.Size(77, 31)
+        Me.startbtn.TabIndex = 46
+        Me.startbtn.Text = "Start"
         '
         'Guna2Panel8
         '
@@ -112,6 +139,28 @@ Partial Class Form6
         Me.Guna2Button9.Name = "Guna2Button9"
         Me.Guna2Button9.Size = New System.Drawing.Size(33, 25)
         Me.Guna2Button9.TabIndex = 10
+        '
+        'backbtn
+        '
+        Me.backbtn.Animated = True
+        Me.backbtn.BackColor = System.Drawing.Color.Transparent
+        Me.backbtn.BorderRadius = 10
+        Me.backbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.backbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.backbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.backbtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.backbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.backbtn.FillColor = System.Drawing.Color.DarkSlateGray
+        Me.backbtn.FillColor2 = System.Drawing.Color.DarkSeaGreen
+        Me.backbtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.backbtn.ForeColor = System.Drawing.Color.White
+        Me.backbtn.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
+        Me.backbtn.Location = New System.Drawing.Point(685, 373)
+        Me.backbtn.Name = "backbtn"
+        Me.backbtn.ShadowDecoration.BorderRadius = 3
+        Me.backbtn.Size = New System.Drawing.Size(77, 31)
+        Me.backbtn.TabIndex = 45
+        Me.backbtn.Text = "Back"
         '
         'Guna2HtmlLabel7
         '
@@ -158,6 +207,7 @@ Partial Class Form6
         'Guna2Panel4
         '
         Me.Guna2Panel4.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_101041
+        Me.Guna2Panel4.Controls.Add(Me.Guna2TextBox1)
         Me.Guna2Panel4.ForeColor = System.Drawing.Color.White
         Me.Guna2Panel4.Location = New System.Drawing.Point(39, 110)
         Me.Guna2Panel4.Name = "Guna2Panel4"
@@ -227,49 +277,33 @@ Partial Class Form6
         Me.Guna2HtmlLabel2.TabIndex = 1
         Me.Guna2HtmlLabel2.Text = "STEP BY STEP GUIDE"
         '
-        'savebtn
+        'Timer1
         '
-        Me.savebtn.Animated = True
-        Me.savebtn.BackColor = System.Drawing.Color.Transparent
-        Me.savebtn.BorderRadius = 10
-        Me.savebtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.savebtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.savebtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.savebtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.savebtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.savebtn.FillColor = System.Drawing.Color.DarkSlateGray
-        Me.savebtn.FillColor2 = System.Drawing.Color.DarkSeaGreen
-        Me.savebtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.savebtn.ForeColor = System.Drawing.Color.White
-        Me.savebtn.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
-        Me.savebtn.Location = New System.Drawing.Point(602, 373)
-        Me.savebtn.Name = "savebtn"
-        Me.savebtn.ShadowDecoration.BorderRadius = 3
-        Me.savebtn.Size = New System.Drawing.Size(77, 31)
-        Me.savebtn.TabIndex = 46
-        Me.savebtn.Text = "Start"
         '
-        'backbtn
+        'Timer3
         '
-        Me.backbtn.Animated = True
-        Me.backbtn.BackColor = System.Drawing.Color.Transparent
-        Me.backbtn.BorderRadius = 10
-        Me.backbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.backbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.backbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.backbtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.backbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.backbtn.FillColor = System.Drawing.Color.DarkSlateGray
-        Me.backbtn.FillColor2 = System.Drawing.Color.DarkSeaGreen
-        Me.backbtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.backbtn.ForeColor = System.Drawing.Color.White
-        Me.backbtn.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
-        Me.backbtn.Location = New System.Drawing.Point(685, 373)
-        Me.backbtn.Name = "backbtn"
-        Me.backbtn.ShadowDecoration.BorderRadius = 3
-        Me.backbtn.Size = New System.Drawing.Size(77, 31)
-        Me.backbtn.TabIndex = 45
-        Me.backbtn.Text = "Back"
+        '
+        'Guna2TextBox1
+        '
+        Me.Guna2TextBox1.BorderColor = System.Drawing.Color.SteelBlue
+        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox1.DefaultText = ""
+        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.FillColor = System.Drawing.Color.SteelBlue
+        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(4, 4)
+        Me.Guna2TextBox1.Name = "Guna2TextBox1"
+        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox1.PlaceholderText = ""
+        Me.Guna2TextBox1.SelectedText = ""
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(511, 308)
+        Me.Guna2TextBox1.TabIndex = 0
+        Me.Guna2TextBox1.TextOffset = New System.Drawing.Point(130, 0)
         '
         'Form6
         '
@@ -286,6 +320,7 @@ Partial Class Form6
         Me.Guna2Panel8.ResumeLayout(False)
         Me.Guna2Panel5.ResumeLayout(False)
         Me.Guna2Panel5.PerformLayout()
+        Me.Guna2Panel4.ResumeLayout(False)
         Me.Guna2Panel3.ResumeLayout(False)
         Me.Guna2Panel3.PerformLayout()
         Me.Guna2Panel2.ResumeLayout(False)
@@ -310,6 +345,10 @@ Partial Class Form6
     Friend WithEvents Guna2Panel8 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents savebtn As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents startbtn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents backbtn As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Timer2 As Timer
+    Friend WithEvents Timer3 As Timer
+    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
 End Class

@@ -42,13 +42,6 @@ Partial Class Form5
         Me.W3 = New Guna.UI2.WinForms.Guna2Button()
         Me.W2 = New Guna.UI2.WinForms.Guna2Button()
         Me.W1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel12 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2ProgressBar3 = New Guna.UI2.WinForms.Guna2ProgressBar()
-        Me.Guna2Panel11 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2ProgressBar2 = New Guna.UI2.WinForms.Guna2ProgressBar()
-        Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2ProgressBar1 = New Guna.UI2.WinForms.Guna2ProgressBar()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
@@ -62,6 +55,13 @@ Partial Class Form5
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2CircleProgressBar1 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2CircleProgressBar2 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2CircleProgressBar3 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.Guna2Panel8.SuspendLayout()
         Me.Guna2Panel16.SuspendLayout()
@@ -69,13 +69,13 @@ Partial Class Form5
         Me.Guna2Panel14.SuspendLayout()
         Me.Guna2Panel13.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
-        Me.Guna2Panel3.SuspendLayout()
-        Me.Guna2Panel12.SuspendLayout()
-        Me.Guna2Panel11.SuspendLayout()
-        Me.Guna2Panel10.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel9.SuspendLayout()
+        Me.Guna2CircleProgressBar1.SuspendLayout()
+        Me.Guna2Panel3.SuspendLayout()
+        Me.Guna2CircleProgressBar2.SuspendLayout()
+        Me.Guna2CircleProgressBar3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2Elipse1
@@ -326,74 +326,6 @@ Partial Class Form5
         Me.W1.Size = New System.Drawing.Size(180, 148)
         Me.W1.TabIndex = 0
         '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_101041
-        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel12)
-        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel11)
-        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel10)
-        Me.Guna2Panel3.Location = New System.Drawing.Point(288, 314)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(676, 197)
-        Me.Guna2Panel3.TabIndex = 2
-        '
-        'Guna2Panel12
-        '
-        Me.Guna2Panel12.Controls.Add(Me.Guna2ProgressBar3)
-        Me.Guna2Panel12.Location = New System.Drawing.Point(467, 26)
-        Me.Guna2Panel12.Name = "Guna2Panel12"
-        Me.Guna2Panel12.Size = New System.Drawing.Size(181, 148)
-        Me.Guna2Panel12.TabIndex = 8
-        '
-        'Guna2ProgressBar3
-        '
-        Me.Guna2ProgressBar3.AutoRoundedCorners = True
-        Me.Guna2ProgressBar3.BorderRadius = 70
-        Me.Guna2ProgressBar3.Location = New System.Drawing.Point(12, 3)
-        Me.Guna2ProgressBar3.Name = "Guna2ProgressBar3"
-        Me.Guna2ProgressBar3.Size = New System.Drawing.Size(153, 142)
-        Me.Guna2ProgressBar3.TabIndex = 2
-        Me.Guna2ProgressBar3.Text = "Guna2ProgressBar3"
-        Me.Guna2ProgressBar3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault
-        '
-        'Guna2Panel11
-        '
-        Me.Guna2Panel11.Controls.Add(Me.Guna2ProgressBar2)
-        Me.Guna2Panel11.Location = New System.Drawing.Point(253, 26)
-        Me.Guna2Panel11.Name = "Guna2Panel11"
-        Me.Guna2Panel11.Size = New System.Drawing.Size(181, 148)
-        Me.Guna2Panel11.TabIndex = 8
-        '
-        'Guna2ProgressBar2
-        '
-        Me.Guna2ProgressBar2.AutoRoundedCorners = True
-        Me.Guna2ProgressBar2.BorderRadius = 70
-        Me.Guna2ProgressBar2.Location = New System.Drawing.Point(15, 3)
-        Me.Guna2ProgressBar2.Name = "Guna2ProgressBar2"
-        Me.Guna2ProgressBar2.Size = New System.Drawing.Size(153, 142)
-        Me.Guna2ProgressBar2.TabIndex = 1
-        Me.Guna2ProgressBar2.Text = "Guna2ProgressBar2"
-        Me.Guna2ProgressBar2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault
-        '
-        'Guna2Panel10
-        '
-        Me.Guna2Panel10.Controls.Add(Me.Guna2ProgressBar1)
-        Me.Guna2Panel10.Location = New System.Drawing.Point(31, 26)
-        Me.Guna2Panel10.Name = "Guna2Panel10"
-        Me.Guna2Panel10.Size = New System.Drawing.Size(181, 148)
-        Me.Guna2Panel10.TabIndex = 7
-        '
-        'Guna2ProgressBar1
-        '
-        Me.Guna2ProgressBar1.AutoRoundedCorners = True
-        Me.Guna2ProgressBar1.BorderRadius = 70
-        Me.Guna2ProgressBar1.Location = New System.Drawing.Point(14, 3)
-        Me.Guna2ProgressBar1.Name = "Guna2ProgressBar1"
-        Me.Guna2ProgressBar1.Size = New System.Drawing.Size(153, 142)
-        Me.Guna2ProgressBar1.TabIndex = 0
-        Me.Guna2ProgressBar1.Text = "Guna2ProgressBar1"
-        Me.Guna2ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault
-        '
         'Guna2Panel2
         '
         Me.Guna2Panel2.Controls.Add(Me.Guna2Panel4)
@@ -610,6 +542,95 @@ Partial Class Form5
         Me.Guna2HtmlLabel5.TabIndex = 15
         Me.Guna2HtmlLabel5.Text = "FitCheck"
         '
+        'Guna2CircleProgressBar1
+        '
+        Me.Guna2CircleProgressBar1.Backwards = True
+        Me.Guna2CircleProgressBar1.Controls.Add(Me.Guna2HtmlLabel6)
+        Me.Guna2CircleProgressBar1.FillColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.Guna2CircleProgressBar1.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.Guna2CircleProgressBar1.ForeColor = System.Drawing.Color.White
+        Me.Guna2CircleProgressBar1.Location = New System.Drawing.Point(45, 20)
+        Me.Guna2CircleProgressBar1.Minimum = 0
+        Me.Guna2CircleProgressBar1.Name = "Guna2CircleProgressBar1"
+        Me.Guna2CircleProgressBar1.ProgressColor2 = System.Drawing.Color.Teal
+        Me.Guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CircleProgressBar1.Size = New System.Drawing.Size(154, 154)
+        Me.Guna2CircleProgressBar1.TabIndex = 1
+        Me.Guna2CircleProgressBar1.Text = "Guna2CircleProgressBar1"
+        '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_101041
+        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleProgressBar3)
+        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleProgressBar2)
+        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleProgressBar1)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(288, 314)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(676, 197)
+        Me.Guna2Panel3.TabIndex = 2
+        '
+        'Guna2HtmlLabel6
+        '
+        Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(54, 58)
+        Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
+        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(33, 39)
+        Me.Guna2HtmlLabel6.TabIndex = 0
+        Me.Guna2HtmlLabel6.Text = "00"
+        '
+        'Guna2CircleProgressBar2
+        '
+        Me.Guna2CircleProgressBar2.Backwards = True
+        Me.Guna2CircleProgressBar2.Controls.Add(Me.Guna2HtmlLabel7)
+        Me.Guna2CircleProgressBar2.FillColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.Guna2CircleProgressBar2.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.Guna2CircleProgressBar2.ForeColor = System.Drawing.Color.White
+        Me.Guna2CircleProgressBar2.Location = New System.Drawing.Point(274, 20)
+        Me.Guna2CircleProgressBar2.Minimum = 0
+        Me.Guna2CircleProgressBar2.Name = "Guna2CircleProgressBar2"
+        Me.Guna2CircleProgressBar2.ProgressColor2 = System.Drawing.Color.Teal
+        Me.Guna2CircleProgressBar2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CircleProgressBar2.Size = New System.Drawing.Size(154, 154)
+        Me.Guna2CircleProgressBar2.TabIndex = 2
+        Me.Guna2CircleProgressBar2.Text = "Guna2CircleProgressBar2"
+        '
+        'Guna2HtmlLabel7
+        '
+        Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(54, 58)
+        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(33, 39)
+        Me.Guna2HtmlLabel7.TabIndex = 0
+        Me.Guna2HtmlLabel7.Text = "00"
+        '
+        'Guna2CircleProgressBar3
+        '
+        Me.Guna2CircleProgressBar3.Backwards = True
+        Me.Guna2CircleProgressBar3.Controls.Add(Me.Guna2HtmlLabel8)
+        Me.Guna2CircleProgressBar3.FillColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.Guna2CircleProgressBar3.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.Guna2CircleProgressBar3.ForeColor = System.Drawing.Color.White
+        Me.Guna2CircleProgressBar3.Location = New System.Drawing.Point(494, 20)
+        Me.Guna2CircleProgressBar3.Minimum = 0
+        Me.Guna2CircleProgressBar3.Name = "Guna2CircleProgressBar3"
+        Me.Guna2CircleProgressBar3.ProgressColor2 = System.Drawing.Color.Teal
+        Me.Guna2CircleProgressBar3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CircleProgressBar3.Size = New System.Drawing.Size(154, 154)
+        Me.Guna2CircleProgressBar3.TabIndex = 3
+        Me.Guna2CircleProgressBar3.Text = "Guna2CircleProgressBar3"
+        '
+        'Guna2HtmlLabel8
+        '
+        Me.Guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel8.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(54, 58)
+        Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
+        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(33, 39)
+        Me.Guna2HtmlLabel8.TabIndex = 0
+        Me.Guna2HtmlLabel8.Text = "00"
+        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -630,15 +651,18 @@ Partial Class Form5
         Me.Guna2Panel13.ResumeLayout(False)
         Me.Guna2Panel13.PerformLayout()
         Me.Guna2Panel5.ResumeLayout(False)
-        Me.Guna2Panel3.ResumeLayout(False)
-        Me.Guna2Panel12.ResumeLayout(False)
-        Me.Guna2Panel11.ResumeLayout(False)
-        Me.Guna2Panel10.ResumeLayout(False)
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
         Me.Guna2Panel9.ResumeLayout(False)
         Me.Guna2Panel9.PerformLayout()
+        Me.Guna2CircleProgressBar1.ResumeLayout(False)
+        Me.Guna2CircleProgressBar1.PerformLayout()
+        Me.Guna2Panel3.ResumeLayout(False)
+        Me.Guna2CircleProgressBar2.ResumeLayout(False)
+        Me.Guna2CircleProgressBar2.PerformLayout()
+        Me.Guna2CircleProgressBar3.ResumeLayout(False)
+        Me.Guna2CircleProgressBar3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -647,16 +671,9 @@ Partial Class Form5
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel10 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel12 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel11 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2ProgressBar3 As Guna.UI2.WinForms.Guna2ProgressBar
-    Friend WithEvents Guna2ProgressBar2 As Guna.UI2.WinForms.Guna2ProgressBar
-    Friend WithEvents Guna2ProgressBar1 As Guna.UI2.WinForms.Guna2ProgressBar
     Friend WithEvents Guna2Panel14 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel13 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -682,4 +699,11 @@ Partial Class Form5
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2CircleProgressBar1 As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents Guna2CircleProgressBar3 As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents Guna2HtmlLabel8 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2CircleProgressBar2 As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
