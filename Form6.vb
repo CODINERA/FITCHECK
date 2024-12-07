@@ -45,7 +45,4 @@ Public Class Form6
         Me.Close()
     End Sub
 
-    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-
-    End Sub
 End Class

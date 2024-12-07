@@ -143,7 +143,4 @@ Public Class Form4
         Next i
     End Sub
 
-    Private Sub daycontainer_Paint(sender As Object, e As PaintEventArgs) Handles daycontainer.Paint
-
-    End Sub
 End Class
