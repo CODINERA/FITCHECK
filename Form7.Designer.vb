@@ -23,14 +23,15 @@ Partial Class Form7
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form7))
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2CircleButton10 = New Guna.UI2.WinForms.Guna2CircleButton()
-        Me.Guna2CircleButton9 = New Guna.UI2.WinForms.Guna2CircleButton()
-        Me.Guna2CircleButton8 = New Guna.UI2.WinForms.Guna2CircleButton()
-        Me.Guna2CircleButton7 = New Guna.UI2.WinForms.Guna2CircleButton()
-        Me.Guna2CircleButton6 = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.pbEnergy5 = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.pbEnergy4 = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.pbEnergy3 = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.pbEnergy2 = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.pbEnergy1 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.backlbl = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.savelbl = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -73,100 +74,100 @@ Partial Class Form7
         '
         'Guna2Panel3
         '
-        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleButton10)
-        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleButton9)
-        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleButton8)
-        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleButton7)
-        Me.Guna2Panel3.Controls.Add(Me.Guna2CircleButton6)
+        Me.Guna2Panel3.Controls.Add(Me.pbEnergy5)
+        Me.Guna2Panel3.Controls.Add(Me.pbEnergy4)
+        Me.Guna2Panel3.Controls.Add(Me.pbEnergy3)
+        Me.Guna2Panel3.Controls.Add(Me.pbEnergy2)
+        Me.Guna2Panel3.Controls.Add(Me.pbEnergy1)
         Me.Guna2Panel3.Location = New System.Drawing.Point(408, 95)
         Me.Guna2Panel3.Name = "Guna2Panel3"
         Me.Guna2Panel3.Size = New System.Drawing.Size(257, 51)
         Me.Guna2Panel3.TabIndex = 46
         '
-        'Guna2CircleButton10
+        'pbEnergy5
         '
-        Me.Guna2CircleButton10.BackgroundImage = Global.FitCheck360.My.Resources.Resources._5_removebg_preview__1_
-        Me.Guna2CircleButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2CircleButton10.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2CircleButton10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2CircleButton10.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2CircleButton10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2CircleButton10.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2CircleButton10.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleButton10.Location = New System.Drawing.Point(207, 3)
-        Me.Guna2CircleButton10.Name = "Guna2CircleButton10"
-        Me.Guna2CircleButton10.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleButton10.Size = New System.Drawing.Size(45, 45)
-        Me.Guna2CircleButton10.TabIndex = 9
+        Me.pbEnergy5.BackgroundImage = CType(resources.GetObject("pbEnergy5.BackgroundImage"), System.Drawing.Image)
+        Me.pbEnergy5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbEnergy5.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.pbEnergy5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.pbEnergy5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.pbEnergy5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.pbEnergy5.FillColor = System.Drawing.Color.Transparent
+        Me.pbEnergy5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.pbEnergy5.ForeColor = System.Drawing.Color.White
+        Me.pbEnergy5.Location = New System.Drawing.Point(207, 3)
+        Me.pbEnergy5.Name = "pbEnergy5"
+        Me.pbEnergy5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.pbEnergy5.Size = New System.Drawing.Size(45, 45)
+        Me.pbEnergy5.TabIndex = 9
         '
-        'Guna2CircleButton9
+        'pbEnergy4
         '
-        Me.Guna2CircleButton9.BackgroundImage = Global.FitCheck360.My.Resources.Resources._5_removebg_preview__1_
-        Me.Guna2CircleButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2CircleButton9.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2CircleButton9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2CircleButton9.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2CircleButton9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2CircleButton9.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton9.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2CircleButton9.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleButton9.Location = New System.Drawing.Point(156, 3)
-        Me.Guna2CircleButton9.Name = "Guna2CircleButton9"
-        Me.Guna2CircleButton9.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleButton9.Size = New System.Drawing.Size(45, 45)
-        Me.Guna2CircleButton9.TabIndex = 8
+        Me.pbEnergy4.BackgroundImage = CType(resources.GetObject("pbEnergy4.BackgroundImage"), System.Drawing.Image)
+        Me.pbEnergy4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbEnergy4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.pbEnergy4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.pbEnergy4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.pbEnergy4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.pbEnergy4.FillColor = System.Drawing.Color.Transparent
+        Me.pbEnergy4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.pbEnergy4.ForeColor = System.Drawing.Color.White
+        Me.pbEnergy4.Location = New System.Drawing.Point(156, 3)
+        Me.pbEnergy4.Name = "pbEnergy4"
+        Me.pbEnergy4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.pbEnergy4.Size = New System.Drawing.Size(45, 45)
+        Me.pbEnergy4.TabIndex = 8
         '
-        'Guna2CircleButton8
+        'pbEnergy3
         '
-        Me.Guna2CircleButton8.BackgroundImage = Global.FitCheck360.My.Resources.Resources._5_removebg_preview__1_
-        Me.Guna2CircleButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2CircleButton8.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2CircleButton8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2CircleButton8.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2CircleButton8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2CircleButton8.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2CircleButton8.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleButton8.Location = New System.Drawing.Point(105, 3)
-        Me.Guna2CircleButton8.Name = "Guna2CircleButton8"
-        Me.Guna2CircleButton8.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleButton8.Size = New System.Drawing.Size(45, 45)
-        Me.Guna2CircleButton8.TabIndex = 7
+        Me.pbEnergy3.BackgroundImage = CType(resources.GetObject("pbEnergy3.BackgroundImage"), System.Drawing.Image)
+        Me.pbEnergy3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbEnergy3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.pbEnergy3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.pbEnergy3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.pbEnergy3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.pbEnergy3.FillColor = System.Drawing.Color.Transparent
+        Me.pbEnergy3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.pbEnergy3.ForeColor = System.Drawing.Color.White
+        Me.pbEnergy3.Location = New System.Drawing.Point(105, 3)
+        Me.pbEnergy3.Name = "pbEnergy3"
+        Me.pbEnergy3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.pbEnergy3.Size = New System.Drawing.Size(45, 45)
+        Me.pbEnergy3.TabIndex = 7
         '
-        'Guna2CircleButton7
+        'pbEnergy2
         '
-        Me.Guna2CircleButton7.BackgroundImage = Global.FitCheck360.My.Resources.Resources._5_removebg_preview__1_
-        Me.Guna2CircleButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2CircleButton7.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2CircleButton7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2CircleButton7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2CircleButton7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2CircleButton7.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2CircleButton7.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleButton7.Location = New System.Drawing.Point(54, 3)
-        Me.Guna2CircleButton7.Name = "Guna2CircleButton7"
-        Me.Guna2CircleButton7.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleButton7.Size = New System.Drawing.Size(45, 45)
-        Me.Guna2CircleButton7.TabIndex = 6
+        Me.pbEnergy2.BackgroundImage = CType(resources.GetObject("pbEnergy2.BackgroundImage"), System.Drawing.Image)
+        Me.pbEnergy2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbEnergy2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.pbEnergy2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.pbEnergy2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.pbEnergy2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.pbEnergy2.FillColor = System.Drawing.Color.Transparent
+        Me.pbEnergy2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.pbEnergy2.ForeColor = System.Drawing.Color.White
+        Me.pbEnergy2.Location = New System.Drawing.Point(54, 3)
+        Me.pbEnergy2.Name = "pbEnergy2"
+        Me.pbEnergy2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.pbEnergy2.Size = New System.Drawing.Size(45, 45)
+        Me.pbEnergy2.TabIndex = 6
         '
-        'Guna2CircleButton6
+        'pbEnergy1
         '
-        Me.Guna2CircleButton6.BackgroundImage = Global.FitCheck360.My.Resources.Resources._5_removebg_preview__1_
-        Me.Guna2CircleButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2CircleButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2CircleButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2CircleButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2CircleButton6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2CircleButton6.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2CircleButton6.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleButton6.Location = New System.Drawing.Point(3, 3)
-        Me.Guna2CircleButton6.Name = "Guna2CircleButton6"
-        Me.Guna2CircleButton6.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleButton6.Size = New System.Drawing.Size(45, 45)
-        Me.Guna2CircleButton6.TabIndex = 5
+        Me.pbEnergy1.BackgroundImage = CType(resources.GetObject("pbEnergy1.BackgroundImage"), System.Drawing.Image)
+        Me.pbEnergy1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbEnergy1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.pbEnergy1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.pbEnergy1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.pbEnergy1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.pbEnergy1.FillColor = System.Drawing.Color.Transparent
+        Me.pbEnergy1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.pbEnergy1.ForeColor = System.Drawing.Color.White
+        Me.pbEnergy1.Location = New System.Drawing.Point(3, 3)
+        Me.pbEnergy1.Name = "pbEnergy1"
+        Me.pbEnergy1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.pbEnergy1.Size = New System.Drawing.Size(45, 45)
+        Me.pbEnergy1.TabIndex = 5
         '
         'Guna2HtmlLabel4
         '
@@ -410,9 +411,9 @@ Partial Class Form7
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2CircleButton10 As Guna.UI2.WinForms.Guna2CircleButton
-    Friend WithEvents Guna2CircleButton9 As Guna.UI2.WinForms.Guna2CircleButton
-    Friend WithEvents Guna2CircleButton8 As Guna.UI2.WinForms.Guna2CircleButton
-    Friend WithEvents Guna2CircleButton7 As Guna.UI2.WinForms.Guna2CircleButton
-    Friend WithEvents Guna2CircleButton6 As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents pbEnergy5 As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents pbEnergy4 As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents pbEnergy3 As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents pbEnergy2 As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents pbEnergy1 As Guna.UI2.WinForms.Guna2CircleButton
 End Class
