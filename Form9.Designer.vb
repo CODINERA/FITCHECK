@@ -39,9 +39,9 @@ Partial Class Form9
         Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel1)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(-1, 0)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(-1, -2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(699, 425)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(699, 427)
         Me.Guna2Panel1.TabIndex = 0
         '
         'Guna2Button1
@@ -124,6 +124,7 @@ Partial Class Form9
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form9"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form9"
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()

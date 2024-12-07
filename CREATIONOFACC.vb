@@ -57,7 +57,7 @@ Public Class CREATIONOFACC
     ' Updated function to check if the inputs are valid
     Private Function ValidateInputs() As Boolean
         If String.IsNullOrWhiteSpace(txtname.Text) Then
-            MessageBox.Show("Username cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Name cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return False
         End If
         If String.IsNullOrWhiteSpace(txtemail.Text) Then
@@ -168,7 +168,7 @@ Public Class CREATIONOFACC
 
     ' Back to login page when the label is clicked
     Private Sub Guna2HtmlLabel5_Click(sender As Object, e As EventArgs) Handles lblsignin.Click
-        Dim signInForm As New Form1()
+        Dim signInForm As New LOGDESIGN()
         signInForm.Show()
         Me.Hide()
     End Sub

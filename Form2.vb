@@ -1,20 +1,40 @@
 ﻿Public Class Form2
-    Private Sub Guna2Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel2.Paint
 
+    ' Declare a counter for tracking the number of clicks
+    Private clickCount As Integer = 0
+    ' Declare variables for initial positions or sizes of the waterPictureBox and glassImageButton
+    Private initialWaterTop As Integer
+    Private initialWaterHeight As Integer
+
+    ' When the form loads, capture the initial state of the waterPictureBox
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        initialWaterTop = waterPicturebox.Top  ' Save the initial top position of the water PictureBox
+        initialWaterHeight = waterPicturebox.Height  ' Save the initial height of the water PictureBox
     End Sub
 
-    Private Sub Guna2Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel5.Paint
+    ' The function for when the glass of water is clicked
+    Private Sub glassImageButton_Click(sender As Object, e As EventArgs) Handles glassImageButton.Click
+        ' Increase the click count
+        clickCount += 1
 
+        ' Move the water up (increase the height or top position)
+        If waterPicturebox.Top > initialWaterTop - (waterPicturebox.Height) Then
+            waterPicturebox.Top -= 32 ' Adjust this to make the water rise (you can change the 10 value)
+        End If
+
+        ' If the user clicks 8 times, show the message box and reset
+        If clickCount >= 8 Then
+            MessageBox.Show("Congratulations! You've drunk 8 glasses of water!", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            ' Reset the water level
+            waterPicturebox.Top = initialWaterTop
+            clickCount = 0 ' Reset click count
+
+            ' Optionally, reset any other things you might want here, like resetting the glass image or other UI elements
+        End If
     End Sub
 
-    Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox1.TextChanged
-
-    End Sub
-
-    Private Sub Guna2Panel9_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel9.Paint
-
-    End Sub
-
+    ' Your existing button click functions
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         Dim nextForm As New Form1()
         nextForm.StartPosition = FormStartPosition.CenterScreen
@@ -51,18 +71,16 @@
         Me.Close()
     End Sub
 
-    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel1.Click
-
-    End Sub
-
-    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
-
-    End Sub
-
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
         Dim nextForm As New Form8()
         nextForm.StartPosition = FormStartPosition.CenterScreen
         nextForm.Show()
         Me.Hide()
     End Sub
+
+
 End Class
+
+
+
+

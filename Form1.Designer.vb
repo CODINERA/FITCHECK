@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,16 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2HtmlLabel12 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
@@ -34,18 +38,21 @@ Partial Class Form1
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2ImageButton1 = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Guna2ImageButton3 = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Guna2ImageButton2 = New Guna.UI2.WinForms.Guna2ImageButton()
-        Me.Guna2ImageButton1 = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2HtmlLabel14 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
@@ -55,13 +62,17 @@ Partial Class Form1
         Me.btnNutrition = New Guna.UI2.WinForms.Guna2Button()
         Me.btnUserActivity = New Guna.UI2.WinForms.Guna2Button()
         Me.btnHomepage = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2GradientPanel1.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
+        Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel8.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
-        Me.Guna2Panel2.SuspendLayout()
+        Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2Elipse1
@@ -72,6 +83,7 @@ Partial Class Form1
         '
         Me.Guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2GradientPanel1.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_093852
+        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Panel2)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Panel8)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2HtmlLabel9)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2CircleButton1)
@@ -79,13 +91,56 @@ Partial Class Form1
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Panel5)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Panel4)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Panel3)
-        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Panel2)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Panel1)
+        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2PictureBox1)
         Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1011, 523)
         Me.Guna2GradientPanel1.TabIndex = 0
+        '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_101041
+        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel6)
+        Me.Guna2Panel2.Controls.Add(Me.Guna2HtmlLabel2)
+        Me.Guna2Panel2.Cursor = System.Windows.Forms.Cursors.No
+        Me.Guna2Panel2.Location = New System.Drawing.Point(288, 97)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.Size = New System.Drawing.Size(213, 191)
+        Me.Guna2Panel2.TabIndex = 1
+        Me.Guna2Panel2.UseTransparentBackground = True
+        '
+        'Guna2Panel6
+        '
+        Me.Guna2Panel6.Controls.Add(Me.Guna2HtmlLabel12)
+        Me.Guna2Panel6.CustomBorderColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel6.FillColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Guna2Panel6.Location = New System.Drawing.Point(4, 41)
+        Me.Guna2Panel6.Name = "Guna2Panel6"
+        Me.Guna2Panel6.Size = New System.Drawing.Size(204, 147)
+        Me.Guna2Panel6.TabIndex = 12
+        '
+        'Guna2HtmlLabel12
+        '
+        Me.Guna2HtmlLabel12.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Guna2HtmlLabel12.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel12.Location = New System.Drawing.Point(73, 11)
+        Me.Guna2HtmlLabel12.Name = "Guna2HtmlLabel12"
+        Me.Guna2HtmlLabel12.Size = New System.Drawing.Size(57, 110)
+        Me.Guna2HtmlLabel12.TabIndex = 11
+        Me.Guna2HtmlLabel12.Text = "0"
+        '
+        'Guna2HtmlLabel2
+        '
+        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(4, 13)
+        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(179, 22)
+        Me.Guna2HtmlLabel2.TabIndex = 4
+        Me.Guna2HtmlLabel2.Text = "Total burned Calories:"
         '
         'Guna2Panel8
         '
@@ -134,13 +189,13 @@ Partial Class Form1
         '
         Me.Guna2HtmlLabel9.AccessibleRole = System.Windows.Forms.AccessibleRole.None
         Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(718, 56)
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(827, 56)
         Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
-        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(180, 20)
+        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(82, 20)
         Me.Guna2HtmlLabel9.TabIndex = 11
-        Me.Guna2HtmlLabel9.Text = "Welcome_User Bangtits69"
+        Me.Guna2HtmlLabel9.Text = "Bangtits69"
         '
         'Guna2CircleButton1
         '
@@ -154,10 +209,10 @@ Partial Class Form1
         Me.Guna2CircleButton1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2CircleButton1.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleButton1.Location = New System.Drawing.Point(906, 34)
+        Me.Guna2CircleButton1.Location = New System.Drawing.Point(906, 45)
         Me.Guna2CircleButton1.Name = "Guna2CircleButton1"
         Me.Guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleButton1.Size = New System.Drawing.Size(73, 57)
+        Me.Guna2CircleButton1.Size = New System.Drawing.Size(49, 35)
         Me.Guna2CircleButton1.TabIndex = 3
         '
         'Guna2HtmlLabel1
@@ -165,7 +220,7 @@ Partial Class Form1
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(288, 30)
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(288, 45)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(121, 31)
         Me.Guna2HtmlLabel1.TabIndex = 0
@@ -175,9 +230,9 @@ Partial Class Form1
         '
         Me.Guna2Panel5.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_101041
         Me.Guna2Panel5.Controls.Add(Me.Guna2HtmlLabel5)
+        Me.Guna2Panel5.Controls.Add(Me.Guna2ImageButton1)
         Me.Guna2Panel5.Controls.Add(Me.Guna2ImageButton3)
         Me.Guna2Panel5.Controls.Add(Me.Guna2ImageButton2)
-        Me.Guna2Panel5.Controls.Add(Me.Guna2ImageButton1)
         Me.Guna2Panel5.Location = New System.Drawing.Point(765, 97)
         Me.Guna2Panel5.Name = "Guna2Panel5"
         Me.Guna2Panel5.Size = New System.Drawing.Size(214, 414)
@@ -186,56 +241,71 @@ Partial Class Form1
         'Guna2HtmlLabel5
         '
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(26, 17)
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(17, 17)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
-        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(163, 18)
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(185, 18)
         Me.Guna2HtmlLabel5.TabIndex = 5
         Me.Guna2HtmlLabel5.Text = "Workout Recommendation"
-        '
-        'Guna2ImageButton3
-        '
-        Me.Guna2ImageButton3.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.Guna2ImageButton3.HoverState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.Guna2ImageButton3.Image = CType(resources.GetObject("Guna2ImageButton3.Image"), System.Drawing.Image)
-        Me.Guna2ImageButton3.ImageOffset = New System.Drawing.Point(0, 0)
-        Me.Guna2ImageButton3.ImageRotate = 0!
-        Me.Guna2ImageButton3.Location = New System.Drawing.Point(27, 295)
-        Me.Guna2ImageButton3.Name = "Guna2ImageButton3"
-        Me.Guna2ImageButton3.PressedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.Guna2ImageButton3.Size = New System.Drawing.Size(161, 95)
-        Me.Guna2ImageButton3.TabIndex = 2
-        '
-        'Guna2ImageButton2
-        '
-        Me.Guna2ImageButton2.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.Guna2ImageButton2.HoverState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.Guna2ImageButton2.Image = CType(resources.GetObject("Guna2ImageButton2.Image"), System.Drawing.Image)
-        Me.Guna2ImageButton2.ImageOffset = New System.Drawing.Point(0, 0)
-        Me.Guna2ImageButton2.ImageRotate = 0!
-        Me.Guna2ImageButton2.Location = New System.Drawing.Point(27, 179)
-        Me.Guna2ImageButton2.Name = "Guna2ImageButton2"
-        Me.Guna2ImageButton2.PressedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.Guna2ImageButton2.Size = New System.Drawing.Size(161, 95)
-        Me.Guna2ImageButton2.TabIndex = 1
         '
         'Guna2ImageButton1
         '
         Me.Guna2ImageButton1.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.Guna2ImageButton1.HoverState.ImageSize = New System.Drawing.Size(64, 64)
+        Me.Guna2ImageButton1.HoverState.ImageSize = New System.Drawing.Size(190, 108)
         Me.Guna2ImageButton1.Image = CType(resources.GetObject("Guna2ImageButton1.Image"), System.Drawing.Image)
         Me.Guna2ImageButton1.ImageOffset = New System.Drawing.Point(0, 0)
         Me.Guna2ImageButton1.ImageRotate = 0!
-        Me.Guna2ImageButton1.Location = New System.Drawing.Point(26, 61)
+        Me.Guna2ImageButton1.ImageSize = New System.Drawing.Size(197, 112)
+        Me.Guna2ImageButton1.IndicateFocus = True
+        Me.Guna2ImageButton1.Location = New System.Drawing.Point(9, 61)
         Me.Guna2ImageButton1.Name = "Guna2ImageButton1"
-        Me.Guna2ImageButton1.PressedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.Guna2ImageButton1.Size = New System.Drawing.Size(161, 95)
-        Me.Guna2ImageButton1.TabIndex = 0
+        Me.Guna2ImageButton1.PressedState.ImageSize = New System.Drawing.Size(190, 108)
+        Me.Guna2ImageButton1.Size = New System.Drawing.Size(197, 112)
+        Me.Guna2ImageButton1.TabIndex = 9
+        Me.Guna2ImageButton1.UseTransparentBackground = True
+        '
+        'Guna2ImageButton3
+        '
+        Me.Guna2ImageButton3.AnimatedGIF = True
+        Me.Guna2ImageButton3.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
+        Me.Guna2ImageButton3.HoverState.ImageSize = New System.Drawing.Size(190, 108)
+        Me.Guna2ImageButton3.Image = CType(resources.GetObject("Guna2ImageButton3.Image"), System.Drawing.Image)
+        Me.Guna2ImageButton3.ImageOffset = New System.Drawing.Point(0, 0)
+        Me.Guna2ImageButton3.ImageRotate = 0!
+        Me.Guna2ImageButton3.ImageSize = New System.Drawing.Size(197, 112)
+        Me.Guna2ImageButton3.IndicateFocus = True
+        Me.Guna2ImageButton3.Location = New System.Drawing.Point(8, 295)
+        Me.Guna2ImageButton3.Name = "Guna2ImageButton3"
+        Me.Guna2ImageButton3.PressedState.ImageSize = New System.Drawing.Size(190, 108)
+        Me.Guna2ImageButton3.Size = New System.Drawing.Size(197, 112)
+        Me.Guna2ImageButton3.TabIndex = 11
+        Me.Guna2ImageButton3.UseTransparentBackground = True
+        '
+        'Guna2ImageButton2
+        '
+        Me.Guna2ImageButton2.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
+        Me.Guna2ImageButton2.HoverState.ImageSize = New System.Drawing.Size(190, 108)
+        Me.Guna2ImageButton2.Image = CType(resources.GetObject("Guna2ImageButton2.Image"), System.Drawing.Image)
+        Me.Guna2ImageButton2.ImageOffset = New System.Drawing.Point(0, 0)
+        Me.Guna2ImageButton2.ImageRotate = 0!
+        Me.Guna2ImageButton2.ImageSize = New System.Drawing.Size(197, 112)
+        Me.Guna2ImageButton2.IndicateFocus = True
+        Me.Guna2ImageButton2.Location = New System.Drawing.Point(12, 179)
+        Me.Guna2ImageButton2.Name = "Guna2ImageButton2"
+        Me.Guna2ImageButton2.PressedState.ImageSize = New System.Drawing.Size(190, 108)
+        Me.Guna2ImageButton2.Size = New System.Drawing.Size(197, 112)
+        Me.Guna2ImageButton2.TabIndex = 10
+        Me.Guna2ImageButton2.UseTransparentBackground = True
         '
         'Guna2Panel4
         '
         Me.Guna2Panel4.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_101041
+        Me.Guna2Panel4.Controls.Add(Me.Guna2HtmlLabel14)
+        Me.Guna2Panel4.Controls.Add(Me.Guna2HtmlLabel11)
+        Me.Guna2Panel4.Controls.Add(Me.Guna2HtmlLabel10)
+        Me.Guna2Panel4.Controls.Add(Me.Guna2HtmlLabel8)
+        Me.Guna2Panel4.Controls.Add(Me.Guna2HtmlLabel7)
         Me.Guna2Panel4.Controls.Add(Me.Guna2HtmlLabel4)
         Me.Guna2Panel4.Controls.Add(Me.Guna2TextBox1)
         Me.Guna2Panel4.Location = New System.Drawing.Point(288, 314)
@@ -243,14 +313,64 @@ Partial Class Form1
         Me.Guna2Panel4.Size = New System.Drawing.Size(457, 197)
         Me.Guna2Panel4.TabIndex = 2
         '
+        'Guna2HtmlLabel14
+        '
+        Me.Guna2HtmlLabel14.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Guna2HtmlLabel14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel14.Location = New System.Drawing.Point(20, 138)
+        Me.Guna2HtmlLabel14.Name = "Guna2HtmlLabel14"
+        Me.Guna2HtmlLabel14.Size = New System.Drawing.Size(323, 18)
+        Me.Guna2HtmlLabel14.TabIndex = 10
+        Me.Guna2HtmlLabel14.Text = "system and increase your risk of chronic diseases like"
+        '
+        'Guna2HtmlLabel11
+        '
+        Me.Guna2HtmlLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(20, 158)
+        Me.Guna2HtmlLabel11.Name = "Guna2HtmlLabel11"
+        Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(160, 18)
+        Me.Guna2HtmlLabel11.TabIndex = 9
+        Me.Guna2HtmlLabel11.Text = " heart issues and diabetes."
+        '
+        'Guna2HtmlLabel10
+        '
+        Me.Guna2HtmlLabel10.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(20, 119)
+        Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
+        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(367, 18)
+        Me.Guna2HtmlLabel10.TabIndex = 8
+        Me.Guna2HtmlLabel10.Text = "Sleeping less than 7–8 hours a night can weaken your immune "
+        '
+        'Guna2HtmlLabel8
+        '
+        Me.Guna2HtmlLabel8.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Guna2HtmlLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(19, 82)
+        Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
+        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(106, 22)
+        Me.Guna2HtmlLabel8.TabIndex = 7
+        Me.Guna2HtmlLabel8.Text = "Did you know?"
+        '
+        'Guna2HtmlLabel7
+        '
+        Me.Guna2HtmlLabel7.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(19, 57)
+        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(200, 26)
+        Me.Guna2HtmlLabel7.TabIndex = 6
+        Me.Guna2HtmlLabel7.Text = "GET ENOUGH SLEEP!"
+        '
         'Guna2HtmlLabel4
         '
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(31, 13)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(4, 8)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(119, 20)
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(192, 27)
         Me.Guna2HtmlLabel4.TabIndex = 5
         Me.Guna2HtmlLabel4.Text = "Daily Fitness Tips"
         '
@@ -267,20 +387,24 @@ Partial Class Form1
         Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(31, 41)
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(4, 41)
         Me.Guna2TextBox1.Name = "Guna2TextBox1"
         Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox1.PlaceholderText = ""
         Me.Guna2TextBox1.ReadOnly = True
         Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(401, 124)
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(448, 151)
         Me.Guna2TextBox1.TabIndex = 0
         '
         'Guna2Panel3
         '
+        Me.Guna2Panel3.AutoRoundedCorners = True
         Me.Guna2Panel3.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_101041
+        Me.Guna2Panel3.BorderColor = System.Drawing.Color.White
+        Me.Guna2Panel3.BorderRadius = 94
         Me.Guna2Panel3.Controls.Add(Me.Guna2Panel7)
         Me.Guna2Panel3.Controls.Add(Me.Guna2HtmlLabel3)
+        Me.Guna2Panel3.Cursor = System.Windows.Forms.Cursors.No
         Me.Guna2Panel3.Location = New System.Drawing.Point(530, 97)
         Me.Guna2Panel3.Name = "Guna2Panel3"
         Me.Guna2Panel3.Size = New System.Drawing.Size(213, 191)
@@ -288,55 +412,40 @@ Partial Class Form1
         '
         'Guna2Panel7
         '
+        Me.Guna2Panel7.Controls.Add(Me.Guna2HtmlLabel13)
+        Me.Guna2Panel7.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2Panel7.FillColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Guna2Panel7.Location = New System.Drawing.Point(32, 50)
+        Me.Guna2Panel7.Location = New System.Drawing.Point(4, 41)
         Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.Size = New System.Drawing.Size(147, 115)
+        Me.Guna2Panel7.Size = New System.Drawing.Size(204, 147)
         Me.Guna2Panel7.TabIndex = 6
+        '
+        'Guna2HtmlLabel13
+        '
+        Me.Guna2HtmlLabel13.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Guna2HtmlLabel13.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel13.Location = New System.Drawing.Point(72, 11)
+        Me.Guna2HtmlLabel13.Name = "Guna2HtmlLabel13"
+        Me.Guna2HtmlLabel13.Size = New System.Drawing.Size(57, 110)
+        Me.Guna2HtmlLabel13.TabIndex = 11
+        Me.Guna2HtmlLabel13.Text = "0"
         '
         'Guna2HtmlLabel3
         '
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(12, 17)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(4, 13)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(171, 18)
+        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(197, 18)
         Me.Guna2HtmlLabel3.TabIndex = 5
-        Me.Guna2HtmlLabel3.Text = "Total burned Carbohydrates"
-        '
-        'Guna2Panel2
-        '
-        Me.Guna2Panel2.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_101041
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel6)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2HtmlLabel2)
-        Me.Guna2Panel2.Location = New System.Drawing.Point(288, 97)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(213, 191)
-        Me.Guna2Panel2.TabIndex = 1
-        '
-        'Guna2Panel6
-        '
-        Me.Guna2Panel6.FillColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Guna2Panel6.Location = New System.Drawing.Point(31, 50)
-        Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(147, 115)
-        Me.Guna2Panel6.TabIndex = 5
-        '
-        'Guna2HtmlLabel2
-        '
-        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(31, 17)
-        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(135, 18)
-        Me.Guna2HtmlLabel2.TabIndex = 4
-        Me.Guna2HtmlLabel2.Text = "Total burned Calories:"
+        Me.Guna2HtmlLabel3.Text = "Total burned " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Carbohydrates"
         '
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Untitled__194_x_144_px___205_x_424_px___8_
+        Me.Guna2Panel1.BorderColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Guna2Panel1.BorderThickness = 3
         Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel6)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel9)
         Me.Guna2Panel1.Controls.Add(Me.btnSettings)
@@ -347,7 +456,7 @@ Partial Class Form1
         Me.Guna2Panel1.Controls.Add(Me.btnHomepage)
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(207, 523)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(201, 523)
         Me.Guna2Panel1.TabIndex = 0
         '
         'Guna2HtmlLabel6
@@ -386,7 +495,7 @@ Partial Class Form1
         Me.btnSettings.Image = Global.FitCheck360.My.Resources.Resources._1732967544768
         Me.btnSettings.ImageOffset = New System.Drawing.Point(-9, 0)
         Me.btnSettings.ImageSize = New System.Drawing.Size(50, 50)
-        Me.btnSettings.Location = New System.Drawing.Point(26, 392)
+        Me.btnSettings.Location = New System.Drawing.Point(20, 392)
         Me.btnSettings.Name = "btnSettings"
         Me.btnSettings.Size = New System.Drawing.Size(147, 43)
         Me.btnSettings.TabIndex = 5
@@ -410,7 +519,7 @@ Partial Class Form1
         Me.btnProgress.Image = Global.FitCheck360.My.Resources.Resources._1732967544724
         Me.btnProgress.ImageOffset = New System.Drawing.Point(-7, 0)
         Me.btnProgress.ImageSize = New System.Drawing.Size(55, 55)
-        Me.btnProgress.Location = New System.Drawing.Point(26, 343)
+        Me.btnProgress.Location = New System.Drawing.Point(24, 343)
         Me.btnProgress.Name = "btnProgress"
         Me.btnProgress.Size = New System.Drawing.Size(147, 43)
         Me.btnProgress.TabIndex = 4
@@ -482,7 +591,7 @@ Partial Class Form1
         Me.btnUserActivity.Image = Global.FitCheck360.My.Resources.Resources._1732967544678
         Me.btnUserActivity.ImageOffset = New System.Drawing.Point(-3, 0)
         Me.btnUserActivity.ImageSize = New System.Drawing.Size(40, 40)
-        Me.btnUserActivity.Location = New System.Drawing.Point(26, 196)
+        Me.btnUserActivity.Location = New System.Drawing.Point(24, 196)
         Me.btnUserActivity.Name = "btnUserActivity"
         Me.btnUserActivity.Size = New System.Drawing.Size(147, 43)
         Me.btnUserActivity.TabIndex = 1
@@ -507,13 +616,24 @@ Partial Class Form1
         Me.btnHomepage.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnHomepage.ImageOffset = New System.Drawing.Point(-6, 0)
         Me.btnHomepage.ImageSize = New System.Drawing.Size(40, 40)
-        Me.btnHomepage.Location = New System.Drawing.Point(33, 158)
+        Me.btnHomepage.Location = New System.Drawing.Point(28, 158)
         Me.btnHomepage.Name = "btnHomepage"
         Me.btnHomepage.Size = New System.Drawing.Size(147, 43)
         Me.btnHomepage.TabIndex = 0
         Me.btnHomepage.Text = "Homepage"
         Me.btnHomepage.TextOffset = New System.Drawing.Point(8, 0)
         Me.btnHomepage.UseTransparentBackground = True
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.Image = Global.FitCheck360.My.Resources.Resources.ProActive__3_
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(201, 291)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(810, 232)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox1.TabIndex = 16
+        Me.Guna2PictureBox1.TabStop = False
         '
         'Form1
         '
@@ -523,9 +643,14 @@ Partial Class Form1
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.Guna2GradientPanel1.PerformLayout()
+        Me.Guna2Panel2.ResumeLayout(False)
+        Me.Guna2Panel2.PerformLayout()
+        Me.Guna2Panel6.ResumeLayout(False)
+        Me.Guna2Panel6.PerformLayout()
         Me.Guna2Panel8.ResumeLayout(False)
         Me.Guna2Panel5.ResumeLayout(False)
         Me.Guna2Panel5.PerformLayout()
@@ -533,10 +658,11 @@ Partial Class Form1
         Me.Guna2Panel4.PerformLayout()
         Me.Guna2Panel3.ResumeLayout(False)
         Me.Guna2Panel3.PerformLayout()
-        Me.Guna2Panel2.ResumeLayout(False)
-        Me.Guna2Panel2.PerformLayout()
+        Me.Guna2Panel7.ResumeLayout(False)
+        Me.Guna2Panel7.PerformLayout()
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -557,19 +683,27 @@ Partial Class Form1
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2CircleButton1 As Guna.UI2.WinForms.Guna2CircleButton
-    Friend WithEvents Guna2ImageButton3 As Guna.UI2.WinForms.Guna2ImageButton
-    Friend WithEvents Guna2ImageButton2 As Guna.UI2.WinForms.Guna2ImageButton
-    Friend WithEvents Guna2ImageButton1 As Guna.UI2.WinForms.Guna2ImageButton
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel9 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel9 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel8 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel8 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel11 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel13 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2ImageButton1 As Guna.UI2.WinForms.Guna2ImageButton
+    Friend WithEvents Guna2ImageButton3 As Guna.UI2.WinForms.Guna2ImageButton
+    Friend WithEvents Guna2ImageButton2 As Guna.UI2.WinForms.Guna2ImageButton
+    Friend WithEvents Guna2HtmlLabel14 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2HtmlLabel12 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

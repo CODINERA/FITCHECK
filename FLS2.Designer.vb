@@ -100,14 +100,14 @@ Partial Class FLS2
         Me.SubmitButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.SubmitButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.SubmitButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.SubmitButton.FillColor = System.Drawing.Color.DarkSlateGray
-        Me.SubmitButton.FillColor2 = System.Drawing.Color.DarkSeaGreen
+        Me.SubmitButton.FillColor = System.Drawing.Color.MediumTurquoise
+        Me.SubmitButton.FillColor2 = System.Drawing.Color.DarkGreen
         Me.SubmitButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SubmitButton.ForeColor = System.Drawing.Color.White
+        Me.SubmitButton.ForeColor = System.Drawing.Color.Black
         Me.SubmitButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
-        Me.SubmitButton.Location = New System.Drawing.Point(235, 380)
+        Me.SubmitButton.Location = New System.Drawing.Point(242, 367)
         Me.SubmitButton.Name = "SubmitButton"
-        Me.SubmitButton.Size = New System.Drawing.Size(73, 18)
+        Me.SubmitButton.Size = New System.Drawing.Size(66, 22)
         Me.SubmitButton.TabIndex = 27
         Me.SubmitButton.Text = "Submit"
         '
@@ -121,14 +121,14 @@ Partial Class FLS2
         Me.backButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.backButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.backButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.backButton.FillColor = System.Drawing.Color.DarkSlateGray
-        Me.backButton.FillColor2 = System.Drawing.Color.DarkSeaGreen
+        Me.backButton.FillColor = System.Drawing.Color.MediumTurquoise
+        Me.backButton.FillColor2 = System.Drawing.Color.DarkGreen
         Me.backButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.backButton.ForeColor = System.Drawing.Color.White
+        Me.backButton.ForeColor = System.Drawing.Color.Black
         Me.backButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
-        Me.backButton.Location = New System.Drawing.Point(159, 380)
+        Me.backButton.Location = New System.Drawing.Point(173, 367)
         Me.backButton.Name = "backButton"
-        Me.backButton.Size = New System.Drawing.Size(70, 18)
+        Me.backButton.Size = New System.Drawing.Size(63, 22)
         Me.backButton.TabIndex = 26
         Me.backButton.Text = "Back"
         '
@@ -147,7 +147,7 @@ Partial Class FLS2
         Me.btnMonth4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMonth4.ForeColor = System.Drawing.Color.White
         Me.btnMonth4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
-        Me.btnMonth4.Location = New System.Drawing.Point(166, 329)
+        Me.btnMonth4.Location = New System.Drawing.Point(166, 318)
         Me.btnMonth4.Name = "btnMonth4"
         Me.btnMonth4.Size = New System.Drawing.Size(142, 33)
         Me.btnMonth4.TabIndex = 25
@@ -168,7 +168,7 @@ Partial Class FLS2
         Me.btnMonth2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMonth2.ForeColor = System.Drawing.Color.White
         Me.btnMonth2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
-        Me.btnMonth2.Location = New System.Drawing.Point(166, 290)
+        Me.btnMonth2.Location = New System.Drawing.Point(166, 279)
         Me.btnMonth2.Name = "btnMonth2"
         Me.btnMonth2.Size = New System.Drawing.Size(142, 33)
         Me.btnMonth2.TabIndex = 24
@@ -189,7 +189,7 @@ Partial Class FLS2
         Me.btnMonth3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMonth3.ForeColor = System.Drawing.Color.White
         Me.btnMonth3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
-        Me.btnMonth3.Location = New System.Drawing.Point(13, 329)
+        Me.btnMonth3.Location = New System.Drawing.Point(13, 318)
         Me.btnMonth3.Name = "btnMonth3"
         Me.btnMonth3.Size = New System.Drawing.Size(147, 33)
         Me.btnMonth3.TabIndex = 23
@@ -210,7 +210,7 @@ Partial Class FLS2
         Me.btnMonth1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMonth1.ForeColor = System.Drawing.Color.White
         Me.btnMonth1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
-        Me.btnMonth1.Location = New System.Drawing.Point(13, 290)
+        Me.btnMonth1.Location = New System.Drawing.Point(13, 279)
         Me.btnMonth1.Name = "btnMonth1"
         Me.btnMonth1.Size = New System.Drawing.Size(147, 33)
         Me.btnMonth1.TabIndex = 22
@@ -304,7 +304,7 @@ Partial Class FLS2
         '
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(27, 267)
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(27, 256)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
         Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(88, 17)
         Me.Guna2HtmlLabel5.TabIndex = 6

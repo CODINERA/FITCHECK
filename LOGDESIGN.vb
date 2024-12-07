@@ -11,7 +11,7 @@ Public Class LOGDESIGN
         Try
             Using sqlConn As New MySqlConnection(connectionString)
                 sqlConn.Open()
-                MessageBox.Show("Connection successful")
+                '   MessageBox.Show("Connection successful")
                 sqlConn.Close()
             End Using
         Catch ex As Exception
@@ -121,5 +121,6 @@ Public Class LOGDESIGN
             txtPassword.PasswordChar = "•"c
         End If
     End Sub
+
 End Class
 

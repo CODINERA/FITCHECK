@@ -34,7 +34,7 @@ Public Class FLS1
             End If
 
             ' Debugging UserID value before checking in the database
-            MessageBox.Show("UserID being checked: " & UserID.ToString()) ' Debugging the UserID being passed
+            'MessageBox.Show("UserID being checked: " & UserID.ToString()) ' Debugging the UserID being passed
 
             ' First, check if the UserID exists in the users table
             If Not CheckUserIDExists(UserID) Then
@@ -74,7 +74,7 @@ Public Class FLS1
             cmdSurvey.Parameters.AddWithValue("@FitnessAct", fitness_act)
 
             cmdSurvey.ExecuteNonQuery()
-            MessageBox.Show("Survey data saved successfully!")
+            'MessageBox.Show("Survey data saved successfully!")
 
             ' Update FLS1Status to True after survey completion
             Dim updateStatusQuery As String = "UPDATE USERS SET FLS1Status = True WHERE user_id = @UserID"
@@ -99,7 +99,7 @@ Public Class FLS1
     Private Function CheckUserIDExists(userID As Integer) As Boolean
         Try
             ' Debugging the UserID and query before executing
-            MessageBox.Show("Checking UserID in database: " & userID.ToString()) ' Debugging the UserID being checked
+            'MessageBox.Show("Checking UserID in database: " & userID.ToString()) ' Debugging the UserID being checked
 
             ' Construct the query to check if the user ID exists
             Dim query As String = "SELECT COUNT(*) FROM users WHERE user_id = @UserID"
@@ -289,7 +289,6 @@ Public Class FLS1
         Dim BMI As Double = (weight / (height_cm / 100) ^ 2)
         txtBMI.Text = BMI.ToString("F2") ' Format to two decimal places
     End Sub
-
 
 
 End Class

@@ -174,4 +174,7 @@ Public Class FLS2
     End Sub
     Public Property UserID As Integer ' Property to hold the user ID
 
+    Private Sub Guna2HtmlLabel5_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel5.Click
+
+    End Sub
 End Class

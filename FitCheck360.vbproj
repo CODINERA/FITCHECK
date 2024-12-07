@@ -437,5 +437,35 @@
   <ItemGroup>
     <None Include="Resources\Chicken Tinola.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BEGGINER_BENTOVER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BEGGINER_CRUNCHES.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BEGGINER_JUMPING.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BEGGINER_BENTOVER1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgwater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProActive %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProActive %281%29 - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProActive %282%29 - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProActive %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProActive %284%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

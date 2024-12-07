@@ -101,9 +101,9 @@ Partial Class Form3
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Panel2)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Panel1)
         Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, -2)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
-        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1011, 523)
+        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1011, 525)
         Me.Guna2GradientPanel1.TabIndex = 0
         '
         'Guna2Panel8
@@ -726,6 +726,7 @@ Partial Class Form3
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form3"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
         Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.Guna2GradientPanel1.PerformLayout()

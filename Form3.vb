@@ -220,5 +220,12 @@ Public Class Form3
         Me.Hide()
     End Sub
 
+    Private Sub Guna2GradientPanel1_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Guna2Panel11_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel11.Paint
+
+    End Sub
 End Class
 

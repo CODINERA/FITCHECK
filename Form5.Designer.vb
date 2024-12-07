@@ -177,7 +177,7 @@ Partial Class Form5
         '
         'Guna2Panel16
         '
-        Me.Guna2Panel16.BackColor = System.Drawing.Color.OliveDrab
+        Me.Guna2Panel16.BackColor = System.Drawing.SystemColors.HotTrack
         Me.Guna2Panel16.Controls.Add(Me.Guna2HtmlLabel4)
         Me.Guna2Panel16.Location = New System.Drawing.Point(793, 77)
         Me.Guna2Panel16.Name = "Guna2Panel16"
@@ -196,7 +196,7 @@ Partial Class Form5
         '
         'Guna2Panel15
         '
-        Me.Guna2Panel15.BackColor = System.Drawing.Color.OliveDrab
+        Me.Guna2Panel15.BackColor = System.Drawing.SystemColors.HotTrack
         Me.Guna2Panel15.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Guna2Panel15.Location = New System.Drawing.Point(576, 77)
         Me.Guna2Panel15.Name = "Guna2Panel15"
@@ -215,7 +215,7 @@ Partial Class Form5
         '
         'Guna2Panel14
         '
-        Me.Guna2Panel14.BackColor = System.Drawing.Color.OliveDrab
+        Me.Guna2Panel14.BackColor = System.Drawing.SystemColors.HotTrack
         Me.Guna2Panel14.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Guna2Panel14.Location = New System.Drawing.Point(359, 77)
         Me.Guna2Panel14.Name = "Guna2Panel14"
@@ -234,7 +234,7 @@ Partial Class Form5
         '
         'Guna2Panel13
         '
-        Me.Guna2Panel13.BackColor = System.Drawing.Color.OliveDrab
+        Me.Guna2Panel13.BackColor = System.Drawing.SystemColors.HotTrack
         Me.Guna2Panel13.Controls.Add(Me.Guna2HtmlLabel1)
         Me.Guna2Panel13.Location = New System.Drawing.Point(541, 296)
         Me.Guna2Panel13.Name = "Guna2Panel13"
@@ -608,6 +608,7 @@ Partial Class Form5
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form5"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.Guna2GradientPanel1.PerformLayout()
         Me.Guna2Panel8.ResumeLayout(False)
