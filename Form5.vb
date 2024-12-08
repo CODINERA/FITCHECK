@@ -2,9 +2,6 @@
 Public Class Form5
 
     Dim daysDone As Integer
-    Private Sub Guna2Panel7_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
 
     Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
         Dim form1 As New Form1()
@@ -135,4 +132,4 @@ Public Class Form5
 
         test()
     End Sub
-End Class
+End Class'that is not my code yeaaaaa'

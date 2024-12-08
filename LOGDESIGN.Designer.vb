@@ -129,13 +129,13 @@ Partial Class LOGDESIGN
         Me.txtPassword.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.ForeColor = System.Drawing.Color.Black
         Me.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtPassword.Location = New System.Drawing.Point(26, 233)
+        Me.txtPassword.Location = New System.Drawing.Point(26, 219)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtPassword.PlaceholderForeColor = System.Drawing.Color.Black
         Me.txtPassword.PlaceholderText = "Password:"
         Me.txtPassword.SelectedText = ""
-        Me.txtPassword.Size = New System.Drawing.Size(270, 27)
+        Me.txtPassword.Size = New System.Drawing.Size(270, 34)
         Me.txtPassword.TabIndex = 7
         '
         'txtEmail
@@ -161,7 +161,7 @@ Partial Class LOGDESIGN
         Me.txtEmail.PlaceholderForeColor = System.Drawing.Color.Black
         Me.txtEmail.PlaceholderText = "Email:"
         Me.txtEmail.SelectedText = ""
-        Me.txtEmail.Size = New System.Drawing.Size(270, 27)
+        Me.txtEmail.Size = New System.Drawing.Size(270, 34)
         Me.txtEmail.TabIndex = 6
         '
         'lblSignup

@@ -416,5 +416,20 @@
   <ItemGroup>
     <None Include="Resources\energy_filled1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excited.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neutral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Angry.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -2,9 +2,8 @@
 Imports BCrypt.Net
 
 Public Class LOGDESIGN
-
-    Private connectionString As String = "server=localhost;user id=root;password=;database=fitcheck;"
-
+    Public Shared LoggedInUserID As Integer
+    Private connectionString As String = "server=localhost;user id=root;password=123;database=fitcheck;"
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtPassword.PasswordChar = "•"c
 
@@ -48,6 +47,19 @@ Public Class LOGDESIGN
                 Me.Hide()
             End If
         End If
+
+        ' Retrieve the user ID based on username and password
+        Dim userId As Integer = GetUserID(txtEmail.Text, txtPassword.Text)
+        If userId > 0 Then
+            ' If login is successful, store the user ID
+            LoggedInUserID = userId ' Open the next form (e.g., Form7) and hide the login form
+            Dim form7 As New Form7()
+            form7.Show()
+            Me.Hide()
+        Else
+            ' Display an error message if login fails
+            MessageBox.Show("Invalid login")
+        End If
     End Sub
 
     Private Function ValidateInputs() As Boolean
@@ -60,6 +72,17 @@ Public Class LOGDESIGN
             Return False
         End If
         Return True
+    End Function
+
+    Private Function GetUserID(email As String, password As String) As Integer
+        ' Replace with actual logic to get the user ID from the database 
+        ' Example: SELECT user_id FROM users WHERE username = @username AND password = @password 
+        ' Dummy implementation for demonstration
+        If email = "email" And password = "password" Then
+            Return 1 ' Example user ID
+        Else
+            Return 0 ' Login failed End If 
+        End If
     End Function
 
     Private Function CheckAccountExists(email As String, password As String) As Boolean
@@ -120,6 +143,10 @@ Public Class LOGDESIGN
         Else
             txtPassword.PasswordChar = "•"c
         End If
+    End Sub
+
+    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
+
     End Sub
 End Class
 

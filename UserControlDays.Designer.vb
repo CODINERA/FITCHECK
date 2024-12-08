@@ -23,6 +23,8 @@ Partial Class UserControlDays
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lbldays = New System.Windows.Forms.Label()
+        Me.picEmoji = New System.Windows.Forms.PictureBox()
+        CType(Me.picEmoji, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbldays
@@ -35,18 +37,32 @@ Partial Class UserControlDays
         Me.lbldays.TabIndex = 1
         Me.lbldays.Text = "00"
         '
+        'picEmoji
+        '
+        Me.picEmoji.Location = New System.Drawing.Point(49, 9)
+        Me.picEmoji.Name = "picEmoji"
+        Me.picEmoji.Size = New System.Drawing.Size(40, 40)
+        Me.picEmoji.TabIndex = 2
+        Me.picEmoji.TabStop = False
+        Me.picEmoji.Visible = False
+        '
         'UserControlDays
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Azure
+        Me.Controls.Add(Me.picEmoji)
         Me.Controls.Add(Me.lbldays)
         Me.Name = "UserControlDays"
         Me.Size = New System.Drawing.Size(92, 52)
+        CType(Me.picEmoji, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents lbldays As Label
+    'Friend WithEvents lbldays As Label
+    'Friend WithEvents picEmoji As PictureBox
+    Private lbldays As System.Windows.Forms.Label
+    Private picEmoji As System.Windows.Forms.PictureBox
 End Class

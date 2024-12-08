@@ -11,7 +11,7 @@ Public Class CREATIONOFACC
 
     Dim Server As String = "localhost"
     Dim username As String = "root"
-    Dim password As String = ""
+    Dim password As String = "123"
     Dim database As String = "fitcheck"
     Private butmap As Bitmap
 

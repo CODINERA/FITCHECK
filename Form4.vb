@@ -4,6 +4,7 @@ Imports MySql.Data.MySqlClient
 Public Class Form4
     Dim month As Integer
     Dim year As Integer
+    Private diaryEntries As New Dictionary(Of DateTime, String)
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         Dim nextForm As New Form1()
         nextForm.StartPosition = FormStartPosition.CenterScreen
@@ -57,24 +58,74 @@ Public Class Form4
 
         Dim days = DateTime.DaysInMonth(year, month)
         Dim daysoftheweek = Convert.ToInt32(Startofthemonth.DayOfWeek.ToString("d")) + 1
+
+        ' Clear the container before adding new controls
+        'daycontainer.Controls.Clear()
+
+        'Dim emojiDict As New Dictionary(Of Integer, String)
+        'LoadEmojis(emojiDict, month, year)
+
         'DateTime Now = DateTime.Now
         For i = 1 To daysoftheweek - 1
             Dim ucblank = New UserControlBlank()
-
             daycontainer.Controls.Add(ucblank)
         Next i
 
         For i = 1 To days
-            Dim ucdays As New UserControlDays()
+            Dim ucdays As New UserControlDays(i, month, year)
             ucdays.days(i)
+            AddHandler ucdays.Click, Sub(sender, e) ShowForm7AndSaveEntry(ucdays.DDate)
             daycontainer.Controls.Add(ucdays)
+
+            ' Update the UserControlDays with the emoji from the dictionary
+            If diaryEntries.ContainsKey(ucdays.DDate) Then
+                ucdays.SetEmoji(diaryEntries(ucdays.DDate))
+            End If
         Next i
     End Sub
+
+    'Private Sub LoadEmojis(ByRef emojiDict As Dictionary(Of Integer, String), month As Integer, year As Integer)
+    '    Try
+    '        Dim sql As String = "SELECT DAY(date) AS day, mood FROM diary WHERE MONTH(date) = @month AND YEAR(date) = @year"
+    '        Dim conn As New MySqlConnection("server=localhost;user id=root;password=123;database=fitcheck;")
+    '        conn.Open()
+    '        Dim cmd As New MySqlCommand(sql, conn)
+    '        cmd.Parameters.AddWithValue("@month", month)
+    '        cmd.Parameters.AddWithValue("@year", year)
+
+    '        Dim reader As MySqlDataReader = cmd.ExecuteReader()
+    '        While reader.Read()
+    '            Dim day As Integer = reader.GetInt32("day")
+    '            Dim emoji As String = reader.GetString("emoji")
+    '            If Not emojiDict.ContainsKey(day) Then
+    '                emojiDict(day) = emoji
+    '            End If
+    '        End While
+    '        reader.Close()
+    '        conn.Close()
+    '    Catch ex As MySqlException
+    '        MessageBox.Show("An error occurred while loading emojis: " & ex.Message)
+    '    End Try
+    'End Sub
+
+    ' Save the diary entry and emoji to the dictionary
+    Public Sub SaveDiaryEntry(entryDate As DateTime, emoji As String)
+        diaryEntries(entryDate) = emoji
+    End Sub
+
+    Private Sub ShowForm7AndSaveEntry(entryDate As DateTime)
+        Dim form7 As New Form7()
+        form7.SetDiaryDate(entryDate)
+        If form7.ShowDialog() = DialogResult.OK Then
+            SaveDiaryEntry(entryDate, form7.selectedEmoji)
+            dispDays() ' Refresh the days to show updated emojis
+        End If
+    End Sub
+
 
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Set the start position to center screen
         Me.StartPosition = FormStartPosition.CenterScreen
-
         dispDays()
     End Sub
 
@@ -100,12 +151,11 @@ Public Class Form4
         'DateTime Now = DateTime.Now
         For i = 1 To daysoftheweek - 1
             Dim ucblank = New UserControlBlank()
-
             daycontainer.Controls.Add(ucblank)
         Next i
 
         For i = 1 To days
-            Dim ucdays As New UserControlDays()
+            Dim ucdays As New UserControlDays(i, month, year)
             ucdays.days(i)
             daycontainer.Controls.Add(ucdays)
         Next i
@@ -137,7 +187,7 @@ Public Class Form4
         Next i
 
         For i = 1 To days
-            Dim ucdays As New UserControlDays()
+            Dim ucdays As New UserControlDays(i, month, year)
             ucdays.days(i)
             daycontainer.Controls.Add(ucdays)
         Next i
