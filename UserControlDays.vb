@@ -40,8 +40,7 @@
 
     Private Sub UserControlDays_Click(sender As Object, e As EventArgs) Handles MyBase.Click
         Dim Diary As New Form7()
-        ' DDate = "December" & lbldays.Text & "Year"
-        'Diary.SetDiaryDate(DDate)
+
         Diary.SetDiaryDate(DDate)
         Diary.Show()
     End Sub

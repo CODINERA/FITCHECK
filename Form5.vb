@@ -1,7 +1,25 @@
 ﻿Imports Guna.UI2.WinForms
+Imports MySql.Data.MySqlClient
 Public Class Form5
-
+    Dim sqlConn As New MySqlConnection
+    Dim sqlCmd As New MySqlCommand
+    Dim sqlRd As MySqlDataReader
+    Dim sqlDt As New DataTable
+    Dim DtA As New MySqlDataAdapter
+    Public updatedExValue As Integer
+    Public updatedExValue2 As Integer
+    Public updatedExValue3 As Integer
+    Dim Server As String = "localhost"
+    Dim username As String = "root"
+    Dim password As String = "123"
+    Dim database As String = "fitcheck"
+    Private butmap As Bitmap
     Dim daysDone As Integer
+    Dim Progressed As Boolean = True
+
+    Private Sub Guna2Panel7_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
 
     Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
         Dim form1 As New Form1()
@@ -70,66 +88,84 @@ Public Class Form5
 
         WorkoutF.Show()
     End Sub
+    Private Function GetWorkoutProgress(workoutReco As String) As Integer
+        Dim Query As String = "SELECT workout_progress FROM workout WHERE user_id = @UserID AND workout_reco = @WorkOutReco"
+        Dim cmd = New MySqlCommand(Query, sqlConn)
+        cmd.Parameters.AddWithValue("@UserID", "1")
+        cmd.Parameters.AddWithValue("@WorkOutReco", workoutReco)
+        Dim currentProgress As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+        Dim newProgress As Integer = updatedExValue ' Assuming updatedExValue is the new progress value
+        'MessageBox.Show(newProgress + " " + currentProgress)
 
-    Private Sub Guna2CircleProgressBar1_ValueChanged(sender As Object, e As EventArgs) Handles Guna2CircleProgressBar1.ValueChanged
+        If currentProgress <> newProgress Then
 
+            Return Convert.ToInt32(cmd.ExecuteScalar())
 
-
-
-    End Sub
-    Private Sub test()
-        Dim WorkoutF As New Form6()
-        If WorkoutF IsNot Nothing Then
-            'Guna2HtmlLabel6.Text = WorkoutF.ExcersisDone
-
-            If WorkoutF.ExcersisDone <> 0 Then
-
-                ' Check if ExcersisDone is divisible by 3
-                If WorkoutF.ExcersisDone Mod 3 = 0 Then
-                    daysDone += 1
+        Else
+            Progressed = False
+            ' If the data hasn't changed, display a message or skip the update
+            MessageBox.Show("No changes detected. Progress remains the same.")
+        End If
+    End Function
+    Private Sub UpdateProgress(progressBar As Guna.UI2.WinForms.Guna2CircleProgressBar, label As Guna.UI2.WinForms.Guna2HtmlLabel, updatedExValue As Integer)
+        If updatedExValue <> 0 Then
+            Dim daysDone As Integer = updatedExValue \ 3 ' Integer division to get full days
+            For i As Integer = 0 To daysDone - 1
+                ' Update progress bar
+                If progressBar.Value < 100 Then
+                    progressBar.Value += 14.285714285714286 ' Increase by 14.28 each iteration
+                Else
+                    progressBar.Value = 100
+                    Exit For
                 End If
 
-                ' Update progress bar and labels based on daysDone
-                For i As Integer = 0 To daysDone - 1
-                    ' Ensure the progress bar does not exceed its max value (100)
-                    If Guna2CircleProgressBar1.Value < 100 Then
-                        Guna2CircleProgressBar1.Value += 14.285714285714286
-                    Else
-                        Guna2CircleProgressBar1.Value = 100 ' Cap the value at 100 if it exceeds
-                    End If
-
-                    ' Declare a variable to hold the parsed value of the label
-                    Dim currentVal As Double
-
-                    ' Safely update the labels by parsing the current text and adding 14.28
-                    If Double.TryParse(Guna2HtmlLabel6.Text, currentVal) Then
-                        Guna2HtmlLabel6.Text = (currentVal + 14.28).ToString("0.00")
-                    Else
-                        ' If parsing fails, initialize the label with 14.28
-                        Guna2HtmlLabel6.Text = "14.28"
-                    End If
-
-                    If Double.TryParse(Guna2HtmlLabel7.Text, currentVal) Then
-                        Guna2HtmlLabel7.Text = (currentVal + 14.28).ToString("0.00")
-                    Else
-                        ' If parsing fails, initialize the label with 14.28
-                        Guna2HtmlLabel7.Text = "14.28"
-                    End If
-
-                    If Double.TryParse(Guna2HtmlLabel8.Text, currentVal) Then
-                        Guna2HtmlLabel8.Text = (currentVal + 14.28).ToString("0.00")
-                    Else
-                        ' If parsing fails, initialize the label with 14.28
-                        Guna2HtmlLabel8.Text = "14.28"
-                    End If
-                Next i
-            End If
+                ' Update label text
+                Dim currentVal As Double
+                If Double.TryParse(label.Text, currentVal) Then
+                    label.Text = (currentVal + 14.28).ToString("0.00")
+                    label.Location = New Point(40, 55)
+                Else
+                    label.Text = "14.28"
+                End If
+            Next i
         End If
+    End Sub
+    Private Sub MainFunction()
+        Try
+            sqlConn.Open()
+            Dim checkQuery As String = "SELECT COUNT(*) FROM workout WHERE user_id = @UserID "
+            Dim cmdr = New MySqlCommand(checkQuery, sqlConn)
+            cmdr.Parameters.AddWithValue("@UserID", "1")
+            Dim count As Integer = Convert.ToInt32(cmdr.ExecuteScalar())  ' Get the count of records
+
+            If count > 0 Then
+                ' Retrieve workout progress for Push-Up, Squats, and Running
+                updatedExValue = GetWorkoutProgress("Push-UP")
+                updatedExValue2 = GetWorkoutProgress("Squats")
+                updatedExValue3 = GetWorkoutProgress("Running")
+            Else
+                MessageBox.Show("There is no activity yet.")
+            End If
+        Catch ex As MySqlException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            sqlConn.Close()
+        End Try
+        If Progressed Then
+            ' Update progress for each exercise
+            UpdateProgress(Guna2CircleProgressBar1, Guna2HtmlLabel6, updatedExValue)
+            UpdateProgress(Guna2CircleProgressBar2, Guna2HtmlLabel7, updatedExValue2)
+            UpdateProgress(Guna2CircleProgressBar3, Guna2HtmlLabel8, updatedExValue3)
+        End If
+
     End Sub
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim WorkoutF As New Form6()
+        sqlConn.ConnectionString = "server=" + Server + ";user id=" + username + ";password=" + password + ";database=" + database + ";"
+        MainFunction()
+    End Sub
 
-
-        test()
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        MainFunction()
     End Sub
 End Class'that is not my code yeaaaaa'

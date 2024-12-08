@@ -290,6 +290,4 @@ Public Class FLS1
         txtBMI.Text = BMI.ToString("F2") ' Format to two decimal places
     End Sub
 
-
-
 End Class

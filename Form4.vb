@@ -62,9 +62,6 @@ Public Class Form4
         ' Clear the container before adding new controls
         'daycontainer.Controls.Clear()
 
-        'Dim emojiDict As New Dictionary(Of Integer, String)
-        'LoadEmojis(emojiDict, month, year)
-
         'DateTime Now = DateTime.Now
         For i = 1 To daysoftheweek - 1
             Dim ucblank = New UserControlBlank()
@@ -83,30 +80,6 @@ Public Class Form4
             End If
         Next i
     End Sub
-
-    'Private Sub LoadEmojis(ByRef emojiDict As Dictionary(Of Integer, String), month As Integer, year As Integer)
-    '    Try
-    '        Dim sql As String = "SELECT DAY(date) AS day, mood FROM diary WHERE MONTH(date) = @month AND YEAR(date) = @year"
-    '        Dim conn As New MySqlConnection("server=localhost;user id=root;password=123;database=fitcheck;")
-    '        conn.Open()
-    '        Dim cmd As New MySqlCommand(sql, conn)
-    '        cmd.Parameters.AddWithValue("@month", month)
-    '        cmd.Parameters.AddWithValue("@year", year)
-
-    '        Dim reader As MySqlDataReader = cmd.ExecuteReader()
-    '        While reader.Read()
-    '            Dim day As Integer = reader.GetInt32("day")
-    '            Dim emoji As String = reader.GetString("emoji")
-    '            If Not emojiDict.ContainsKey(day) Then
-    '                emojiDict(day) = emoji
-    '            End If
-    '        End While
-    '        reader.Close()
-    '        conn.Close()
-    '    Catch ex As MySqlException
-    '        MessageBox.Show("An error occurred while loading emojis: " & ex.Message)
-    '    End Try
-    'End Sub
 
     ' Save the diary entry and emoji to the dictionary
     Public Sub SaveDiaryEntry(entryDate As DateTime, emoji As String)
@@ -157,6 +130,8 @@ Public Class Form4
         For i = 1 To days
             Dim ucdays As New UserControlDays(i, month, year)
             ucdays.days(i)
+            'ucdays.month = monthname
+            'ucdays.year = year
             daycontainer.Controls.Add(ucdays)
         Next i
     End Sub
@@ -189,11 +164,12 @@ Public Class Form4
         For i = 1 To days
             Dim ucdays As New UserControlDays(i, month, year)
             ucdays.days(i)
+            'ucdays.month = monthname
+            'ucdays.year = year
             daycontainer.Controls.Add(ucdays)
         Next i
-    End Sub
-
-    Private Sub daycontainer_Paint(sender As Object, e As PaintEventArgs) Handles daycontainer.Paint
 
     End Sub
+
+
 End Class
