@@ -15,6 +15,8 @@ Public Class Form7
     Dim password As String = "123"
     Dim database As String = "fitcheck"
     Dim databaseDate As String
+    ''---------- Other Refresh Logic ----------'
+    'Public Event DataSaved As EventHandler
     Private selectedDate As DateTime
     Public selectedEmoji As String = String.Empty
     Private connectionString As String = "server=" + Server + ";user id=" + username + ";password=" + password + ";database=" + database + ";"
@@ -97,9 +99,25 @@ Public Class Form7
             MessageBox.Show("Saved")
             'cmd.Dispose()
             sqlConn.Close()
+
+            '------------------------------Testing for Refresh Calendar!!!--------------------------------'
+            '' Call the method in Form4 to refresh the calendar
+            'If Me.Owner IsNot Nothing Then
+            '    MessageBox.Show("Owner is not Nothing, proceeding to refresh.")
+            '    CType(Me.Owner, Form4).RefreshCalendar()
+            'Else
+            '    MessageBox.Show("Owner is Nothing, cannot refresh.")
+            'End
+
+            ''------------------------------ Other Refresh Logic -------------------------------'
+            '' Raise the DataSaved event
+            'RaiseEvent DataSaved(Me, EventArgs.Empty)
+
         Catch ex As MySqlException
             MessageBox.Show("An error occured: " & ex.Message)
         End Try
+        '' Debug to ensure this line is reached
+        MessageBox.Show("Closing Form7")
         Me.Close()
     End Sub
 
@@ -127,10 +145,6 @@ Public Class Form7
         Else
             MessageBox.Show("Invalid emoji selection. Available moods: " & String.Join(", ", moodEnumValues))
         End If
-    End Sub
-
-    Private Sub pbEnergy1_Click(sender As Object, e As EventArgs) Handles pbEnergy1.Click
-
     End Sub
 
 

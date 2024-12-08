@@ -15,7 +15,8 @@
     ' Method to set and display the emoji
     Public Sub SetEmoji(emoji As String)
         savedEmoji = emoji
-        picEmoji.Text = emoji
+        'picEmoji.Text = emoji
+        picEmoji.Image = GetEmojiImage(emoji)
         picEmoji.Visible = True
     End Sub
 
@@ -23,15 +24,15 @@
     Private Function GetEmojiImage(emoji As String) As Image
         Select Case emoji
             Case "Excited"
-                Return My.Resources.Excited ' Replace with the actual image resource name
+                Return My.Resources.Excited
             Case "Happy"
-                Return My.Resources.Happy ' Replace with the actual image resource name
+                Return My.Resources.Happy
             Case "Neutral"
-                Return My.Resources.Neutral ' Replace with the actual image resource name
+                Return My.Resources.Neutral
             Case "Sad"
-                Return My.Resources.Sad ' Replace with the actual image resource name
+                Return My.Resources.Sad
             Case "Angry"
-                Return My.Resources.Angry ' Replace with the actual image resource name
+                Return My.Resources.Angry
             Case Else
                 Return Nothing
         End Select
@@ -41,7 +42,13 @@
     Private Sub UserControlDays_Click(sender As Object, e As EventArgs) Handles MyBase.Click
         Dim Diary As New Form7()
 
+        ' Ensure the parent form is not nothing and it is of type Form4
+        If Me.ParentForm IsNot Nothing AndAlso TypeOf Me.ParentForm Is Form4 Then
+            Diary.Owner = CType(Me.ParentForm, Form4) ' Set Form4 as the owner
+        End If
+
         Diary.SetDiaryDate(DDate)
         Diary.Show()
     End Sub
+
 End Class

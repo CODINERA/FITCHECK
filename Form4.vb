@@ -5,6 +5,7 @@ Public Class Form4
     Dim month As Integer
     Dim year As Integer
     Private diaryEntries As New Dictionary(Of DateTime, String)
+    Private sqlConn As MySqlConnection
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         Dim nextForm As New Form1()
         nextForm.StartPosition = FormStartPosition.CenterScreen
@@ -61,6 +62,11 @@ Public Class Form4
 
         ' Clear the container before adding new controls
         'daycontainer.Controls.Clear()
+
+        '----------------------Calling LoadDiaryEntries() For Emoji ----------------------'
+        ' Load diary entries from the database
+        LoadDiaryEntries()
+        '----------------------Calling LoadDiaryEntries() For Emoji ----------------------'
 
         'DateTime Now = DateTime.Now
         For i = 1 To daysoftheweek - 1
@@ -171,5 +177,96 @@ Public Class Form4
 
     End Sub
 
+    '------------------------------------------For Displaying Emojis ------------------------------------------'
+    Private Sub LoadDiaryEntries()
+        Try
+            Dim connString As String = "server=localhost;user id=root;password=123;database=fitcheck;"
+            Using conn As New MySqlConnection(connString)
+                conn.Open()
+                Dim sql As String = "SELECT date, mood FROM diary WHERE MONTH(date) = @month AND YEAR(date) = @year"
+                Using cmd As New MySqlCommand(sql, conn)
+                    cmd.Parameters.AddWithValue("@month", month)
+                    cmd.Parameters.AddWithValue("@year", year)
 
+                    Using reader As MySqlDataReader = cmd.ExecuteReader()
+                        diaryEntries.Clear()
+                        While reader.Read()
+                            Dim entryDate As DateTime = reader.GetDateTime("date")
+                            'Dim mood As String = reader.GetString("mood")
+                            Dim mood As String = String.Empty
+
+                            'If Not reader.IsDBNull(reader.GetOrdinal("mood")) Then
+                            '    Dim todaymood As String = reader.GetString("mood")
+                            '    diaryEntries(entryDate) = mood
+                            'End If
+
+                            If Not reader.IsDBNull(reader.GetOrdinal("mood")) Then
+                                mood = reader.GetString("mood")
+                            Else
+                                mood = "" ' Default or placeholder value End If
+                            End If
+                            diaryEntries(entryDate) = mood
+                        End While
+                    End Using
+                End Using
+            End Using
+        Catch ex As MySqlException
+            MessageBox.Show("An error occurred while loading diary entries: " & ex.Message)
+        End Try
+    End Sub
+    'Private Sub OpenForm7()
+    '    Dim form7 As New Form7()
+    '    ' Subscribe to the DataSaved event
+    '    AddHandler form7.DataSaved, AddressOf OnDataSaved
+    '    form7.Show()
+    'End Sub
+
+    '' Event handler for DataSaved event
+    'Private Sub OnDataSaved(sender As Object, e As EventArgs)
+    '    RefreshCalendar()
+    'End Sub
+
+    Public Sub RefreshCalendar()
+        'MessageBox.Show("RefreshCalendar is called.")
+        '' Call dispDays to refresh the calendar
+        'dispDays()
+
+        ' Clear existing entries
+        daycontainer.Controls.Clear()
+
+        ' Fetch all diary entries
+        Dim allEntries As New List(Of DiaryEntry)
+        Try
+            sqlConn.Open()
+            Dim sql As String = "SELECT * FROM diary"
+            Dim cmd As MySqlCommand = sqlConn.CreateCommand()
+            cmd.CommandText = sql
+            Dim reader As MySqlDataReader = cmd.ExecuteReader()
+
+            While reader.Read()
+                Dim entry As New DiaryEntry()
+                entry.UserId = reader("user_id")
+                entry.Date = reader("date")
+                entry.DiaryEntry = reader("diary_entry")
+                entry.Mood = If(IsDBNull(reader("mood")), String.Empty, reader("mood").ToString())
+                allEntries.Add(entry)
+            End While
+
+            reader.Close()
+            sqlConn.Close()
+        Catch ex As MySqlException
+            MessageBox.Show("An error occurred while fetching entries: " & ex.Message)
+        End Try
+
+        ' Load the entries into the calendar
+        LoadDiaryEntries(allEntries)
+
+        MessageBox.Show("Calendar refreshed!")
+    End Sub
+    Public Class DiaryEntry
+        Public Property UserId As String
+        Public Property [Date] As Date
+        Public Property DiaryEntry As String
+        Public Property Mood As String
+    End Class
 End Class
