@@ -37,8 +37,8 @@ Partial Class Form6
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -216,7 +216,7 @@ Partial Class Form6
         '
         Me.Guna2TextBox1.BorderColor = System.Drawing.Color.SteelBlue
         Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = "dsadasd"
+        Me.Guna2TextBox1.DefaultText = ""
         Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
@@ -237,34 +237,34 @@ Partial Class Form6
         '
         'Guna2Panel3
         '
-        Me.Guna2Panel3.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Guna2Panel3.Controls.Add(Me.Guna2HtmlLabel1)
-        Me.Guna2Panel3.Location = New System.Drawing.Point(39, 40)
+        Me.Guna2Panel3.Controls.Add(Me.Guna2HtmlLabel3)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(39, 36)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(194, 41)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(260, 45)
         Me.Guna2Panel3.TabIndex = 4
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 20.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(3, 4)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(106, 34)
+        Me.Guna2HtmlLabel1.TabIndex = 0
+        Me.Guna2HtmlLabel1.Text = "Nothing"
         '
         'Guna2HtmlLabel3
         '
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(105, 8)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(142, 8)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(75, 30)
         Me.Guna2HtmlLabel3.TabIndex = 1
         Me.Guna2HtmlLabel3.Text = "(Easy)"
-        '
-        'Guna2HtmlLabel1
-        '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(3, 8)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(99, 30)
-        Me.Guna2HtmlLabel1.TabIndex = 0
-        Me.Guna2HtmlLabel1.Text = "Push Up"
         '
         'Guna2Panel2
         '
@@ -281,11 +281,11 @@ Partial Class Form6
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(60, 66)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(67, 66)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(31, 30)
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(17, 30)
         Me.Guna2HtmlLabel4.TabIndex = 6
-        Me.Guna2HtmlLabel4.Text = "30"
+        Me.Guna2HtmlLabel4.Text = "3"
         '
         'Guna2HtmlLabel2
         '

@@ -67,6 +67,8 @@ Public Class Form4
         For i = 1 To days
             Dim ucdays As New UserControlDays()
             ucdays.days(i)
+            ucdays.month = monthname
+            ucdays.year = year
             daycontainer.Controls.Add(ucdays)
         Next i
     End Sub
@@ -107,6 +109,8 @@ Public Class Form4
         For i = 1 To days
             Dim ucdays As New UserControlDays()
             ucdays.days(i)
+            ucdays.month = monthname
+            ucdays.year = year
             daycontainer.Controls.Add(ucdays)
         Next i
     End Sub
@@ -139,11 +143,12 @@ Public Class Form4
         For i = 1 To days
             Dim ucdays As New UserControlDays()
             ucdays.days(i)
+            ucdays.month = monthname
+            ucdays.year = year
             daycontainer.Controls.Add(ucdays)
         Next i
-    End Sub
-
-    Private Sub daycontainer_Paint(sender As Object, e As PaintEventArgs) Handles daycontainer.Paint
 
     End Sub
+
+
 End Class

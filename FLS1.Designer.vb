@@ -660,7 +660,7 @@ Partial Class FLS1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FLS1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FLS1"
+        Me.Text = "1"
         Me.Guna2GradientPanel3.ResumeLayout(False)
         Me.Guna2GradientPanel3.PerformLayout()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

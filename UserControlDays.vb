@@ -1,4 +1,7 @@
 ﻿Public Class UserControlDays
+    Dim DDate As String
+    Public month As String
+    Public year As String
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lbldays.Click
 
@@ -13,6 +16,8 @@
 
     Private Sub UserControlDays_Click(sender As Object, e As EventArgs) Handles MyBase.Click
         Dim Diary As New Form7()
+        DDate = month.ToString() + " " + lbldays.Text + "," + " " + year.ToString()
+        Diary.ddate = DDate
         Diary.Show()
     End Sub
 End Class

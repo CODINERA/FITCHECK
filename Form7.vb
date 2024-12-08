@@ -5,12 +5,16 @@ Public Class Form7
     Dim sqlRd As MySqlDataReader
     Dim sqlDt As New DataTable
     Dim DtA As New MySqlDataAdapter
+    Public ddate As String
 
     Dim Server As String = "localhost"
     Dim username As String = "root"
     Dim password As String = "123"
     Dim database As String = "fitcheck"
     Private Sub Form7_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim ucdays As New UserControlDays()
+        Guna2HtmlLabel1.Text = ddate
+        MessageBox.Show("daysDone" & ddate)
         sqlConn.ConnectionString = "server=" + Server + ";user id=" + username + ";password=" + password + ";database=" + database + ";"
         txtDiary.Text = "Today..."
         txtDiary.ForeColor = Color.Gray
@@ -69,4 +73,6 @@ Public Class Form7
         Dim energyNumber As Integer = CInt(clickedEnergy.Name.Substring(8)) ' Extract number from "pbEnergyX"
         UpdateEnergy(energyNumber)
     End Sub
+
+
 End Class

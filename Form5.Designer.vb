@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form5
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,12 @@ Partial Class Form5
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
@@ -62,6 +63,7 @@ Partial Class Form5
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.Guna2Panel8.SuspendLayout()
         Me.Guna2Panel16.SuspendLayout()
@@ -88,6 +90,7 @@ Partial Class Form5
         Me.Guna2GradientPanel1.BackgroundImage = Global.FitCheck360.My.Resources.Resources.Screenshot_2024_11_30_093852
         Me.Guna2GradientPanel1.BorderColor = System.Drawing.Color.SteelBlue
         Me.Guna2GradientPanel1.BorderThickness = 2
+        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Button1)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Panel8)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2HtmlLabel9)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2CircleButton1)
@@ -103,6 +106,28 @@ Partial Class Form5
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1011, 523)
         Me.Guna2GradientPanel1.TabIndex = 0
+        '
+        'Guna2Button1
+        '
+        Me.Guna2Button1.Animated = True
+        Me.Guna2Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Button1.BorderRadius = 10
+        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button1.FillColor = System.Drawing.Color.DarkSlateGray
+        Me.Guna2Button1.FillColor2 = System.Drawing.Color.DarkSeaGreen
+        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
+        Me.Guna2Button1.Location = New System.Drawing.Point(566, 28)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.ShadowDecoration.BorderRadius = 3
+        Me.Guna2Button1.Size = New System.Drawing.Size(117, 31)
+        Me.Guna2Button1.TabIndex = 47
+        Me.Guna2Button1.Text = "Recalculate"
         '
         'Guna2Panel8
         '
@@ -284,11 +309,12 @@ Partial Class Form5
         Me.W3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.W3.FillColor = System.Drawing.Color.Transparent
         Me.W3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.W3.ForeColor = System.Drawing.Color.White
+        Me.W3.ForeColor = System.Drawing.Color.Transparent
         Me.W3.Location = New System.Drawing.Point(468, 26)
         Me.W3.Name = "W3"
         Me.W3.Size = New System.Drawing.Size(180, 148)
         Me.W3.TabIndex = 9
+        Me.W3.Text = "Running"
         '
         'W2
         '
@@ -302,11 +328,12 @@ Partial Class Form5
         Me.W2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.W2.FillColor = System.Drawing.Color.Transparent
         Me.W2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.W2.ForeColor = System.Drawing.Color.White
+        Me.W2.ForeColor = System.Drawing.Color.Transparent
         Me.W2.Location = New System.Drawing.Point(248, 24)
         Me.W2.Name = "W2"
         Me.W2.Size = New System.Drawing.Size(180, 148)
         Me.W2.TabIndex = 8
+        Me.W2.Text = "Squats"
         '
         'W1
         '
@@ -320,11 +347,12 @@ Partial Class Form5
         Me.W1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.W1.FillColor = System.Drawing.Color.Transparent
         Me.W1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.W1.ForeColor = System.Drawing.Color.White
+        Me.W1.ForeColor = System.Drawing.Color.Transparent
         Me.W1.Location = New System.Drawing.Point(34, 26)
         Me.W1.Name = "W1"
         Me.W1.Size = New System.Drawing.Size(180, 148)
         Me.W1.TabIndex = 0
+        Me.W1.Text = "Push-UP"
         '
         'Guna2Panel3
         '
@@ -631,6 +659,10 @@ Partial Class Form5
         Me.Guna2HtmlLabel5.TabIndex = 15
         Me.Guna2HtmlLabel5.Text = "FitCheck"
         '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
+        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -706,4 +738,6 @@ Partial Class Form5
     Friend WithEvents Guna2CircleProgressBar2 As Guna.UI2.WinForms.Guna2CircleProgressBar
     Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2GradientButton
 End Class
