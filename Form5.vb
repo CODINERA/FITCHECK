@@ -1,5 +1,7 @@
 ﻿Imports Guna.UI2.WinForms
+
 Imports MySql.Data.MySqlClient
+
 Public Class Form5
     Dim sqlConn As New MySqlConnection
     Dim sqlCmd As New MySqlCommand
@@ -11,7 +13,7 @@ Public Class Form5
     Public updatedExValue3 As Integer
     Dim Server As String = "localhost"
     Dim username As String = "root"
-    Dim password As String = "123"
+    Dim password As String = "123123"
     Dim database As String = "fitcheck"
     Private butmap As Bitmap
     Dim daysDone As Integer

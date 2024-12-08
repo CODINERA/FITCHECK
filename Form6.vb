@@ -4,7 +4,6 @@ Imports Microsoft.SqlServer
 Imports Microsoft.VisualBasic.ApplicationServices
 Imports MySql.Data.MySqlClient
 Imports Org.BouncyCastle.Crypto
-Imports System.Text.Json
 Imports Mysqlx.XDevAPI.Common
 Public Class Form6
     Public WorkoutName As String
@@ -19,7 +18,7 @@ Public Class Form6
     Dim DtA As New MySqlDataAdapter
     Dim Server As String = "localhost"
     Dim username As String = "root"
-    Dim password As String = "123"
+    Dim password As String = "123123"
     Dim database As String = "fitcheck"
     Private butmap As Bitmap
 
@@ -140,6 +139,10 @@ Public Class Form6
     End Sub
 
     Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel4_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel4.Click
 
     End Sub
 End Class

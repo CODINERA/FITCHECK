@@ -12,13 +12,17 @@ Public Class Form7
 
     Dim Server As String = "localhost"
     Dim username As String = "root"
-    Dim password As String = "123"
+    Dim password As String = "123123"
     Dim database As String = "fitcheck"
     Dim databaseDate As String
     ''---------- Other Refresh Logic ----------'
     'Public Event DataSaved As EventHandler
     Private selectedDate As DateTime
     Public selectedEmoji As String = String.Empty
+    Public Energy As Integer
+    Dim button As Guna2CircleButton
+    Dim Rating As Integer
+    Public userEntry As String
     Private connectionString As String = "server=" + Server + ";user id=" + username + ";password=" + password + ";database=" + database + ";"
 
     ' List of acceptable ENUM values for mood
@@ -33,9 +37,28 @@ Public Class Form7
 
     Private Sub Form7_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         sqlConn.ConnectionString = "server=" + Server + ";user id=" + username + ";password=" + password + ";database=" + database + ";"
-        txtDiary.Text = "Today..."
+        If txtDiary.Text Is "" Then
+            txtDiary.Text = "Today..."
+        Else
+            txtDiary.Text = userEntry
+        End If
+
         txtDiary.ForeColor = Color.Gray
         InitializeLabels()
+        For i As Integer = 0 To Energy - 1
+            Select Case i
+                Case 0
+                    pbEnergy1.BackgroundImage = My.Resources.energy_filled
+                Case 1
+                    pbEnergy2.BackgroundImage = My.Resources.energy_filled
+                Case 2
+                    pbEnergy3.BackgroundImage = My.Resources.energy_filled
+                Case 3
+                    pbEnergy4.BackgroundImage = My.Resources.energy_filled
+                Case 4
+                    pbEnergy5.BackgroundImage = My.Resources.energy_filled
+            End Select
+        Next i
     End Sub
 
     ' Define labels for the emoji buttons
@@ -79,46 +102,65 @@ Public Class Form7
     End Property
 
     Private Sub savelbl_Click(sender As Object, e As EventArgs) Handles savelbl.Click
+
+
         Try
             sqlConn.Open()
-            'Dim Conn As New MySqlConnection(sqlConn.ConnectionString)
+            savelbl.Enabled = False
+            ' Define the SQL query to check if an entry already exists for the given user_id and date
+            Dim checkSql As String = "SELECT COUNT(*) FROM diary WHERE user_id = @user_id AND date = @date"
+            Dim checkCmd As New MySqlCommand(checkSql, sqlConn)
+            checkCmd.Parameters.AddWithValue("@user_id", "3") ' Use the logged-in user ID
+            checkCmd.Parameters.AddWithValue("@date", databaseDate)
 
-            Dim sql As String = "INSERT INTO diary(user_id, date,diary_entry,mood) values(?,?,?,?)"
-            Dim cmd As MySqlCommand = sqlConn.CreateCommand()
-            cmd.CommandText = sql
+            Dim count As Integer = Convert.ToInt32(checkCmd.ExecuteScalar())
 
-            cmd.Parameters.AddWithValue("user_id", "3") ' Use the logged-in user ID
-            cmd.Parameters.AddWithValue("date", databaseDate)
-            cmd.Parameters.AddWithValue("diary_entry", txtDiary.Text)
-            If selectedEmoji IsNot "" Then
-                cmd.Parameters.AddWithValue("mood", selectedEmoji)
+            If count > 0 Then
+                ' If an entry exists, update the diary entry
+                Dim updateSql As String = "UPDATE diary SET diary_entry = @diary_entry, mood = @mood,energy_level = @energy WHERE user_id = @user_id AND date = @date"
+                Dim updateCmd As New MySqlCommand(updateSql, sqlConn)
+
+                updateCmd.Parameters.AddWithValue("@user_id", "3") ' Use the logged-in user ID
+                updateCmd.Parameters.AddWithValue("@date", databaseDate)
+                updateCmd.Parameters.AddWithValue("@diary_entry", txtDiary.Text)
+                updateCmd.Parameters.AddWithValue("@energy", Energy)
+                If selectedEmoji IsNot "" Then
+                    updateCmd.Parameters.AddWithValue("@mood", selectedEmoji)
+                Else
+                    updateCmd.Parameters.AddWithValue("@mood", DBNull.Value)
+                End If
+
+                updateCmd.ExecuteNonQuery()
+                'MessageBox.Show("Diary entry updated.")
             Else
-                cmd.Parameters.AddWithValue("mood", DBNull.Value)
+                ' If no entry exists, insert a new entry
+                Dim insertSql As String = "INSERT INTO diary(user_id, date, diary_entry, mood,energy_level) VALUES(@user_id, @date, @diary_entry, @mood,@energy)"
+                Dim insertCmd As New MySqlCommand(insertSql, sqlConn)
+
+                insertCmd.Parameters.AddWithValue("@user_id", "3") ' Use the logged-in user ID
+                insertCmd.Parameters.AddWithValue("@date", databaseDate)
+                insertCmd.Parameters.AddWithValue("@diary_entry", txtDiary.Text)
+                insertCmd.Parameters.AddWithValue("@energy", Energy)
+                If selectedEmoji IsNot "" Then
+                    insertCmd.Parameters.AddWithValue("@mood", selectedEmoji)
+                Else
+                    insertCmd.Parameters.AddWithValue("@mood", DBNull.Value)
+                End If
+
+                insertCmd.ExecuteNonQuery()
+                'MessageBox.Show("New diary entry saved.")
             End If
-            cmd.ExecuteNonQuery()
-            MessageBox.Show("Saved")
-            'cmd.Dispose()
+
             sqlConn.Close()
-
-            '------------------------------Testing for Refresh Calendar!!!--------------------------------'
-            '' Call the method in Form4 to refresh the calendar
-            'If Me.Owner IsNot Nothing Then
-            '    MessageBox.Show("Owner is not Nothing, proceeding to refresh.")
-            '    CType(Me.Owner, Form4).RefreshCalendar()
-            'Else
-            '    MessageBox.Show("Owner is Nothing, cannot refresh.")
-            'End
-
-            ''------------------------------ Other Refresh Logic -------------------------------'
-            '' Raise the DataSaved event
-            'RaiseEvent DataSaved(Me, EventArgs.Empty)
-
+            Form4.RefreshCalendar()
+            Me.Close()
         Catch ex As MySqlException
-            MessageBox.Show("An error occured: " & ex.Message)
+            MessageBox.Show("An error occurred: " & ex.Message)
+        Finally
+            ' Ensure the button is re-enabled in case of an error
+            savelbl.Enabled = True
         End Try
-        '' Debug to ensure this line is reached
-        MessageBox.Show("Closing Form7")
-        Me.Close()
+
     End Sub
 
     Private Sub btnEmoji_Click(sender As Object, e As EventArgs) Handles btnSad.Click, btnNeutral.Click, btnHappy.Click, btnExcited.Click, btnAngry.Click
@@ -147,5 +189,33 @@ Public Class Form7
         End If
     End Sub
 
-
+    Private Sub Energy_Click(sender As Object, e As EventArgs) Handles pbEnergy1.Click, pbEnergy2.Click, pbEnergy3.Click, pbEnergy4.Click, pbEnergy5.Click
+        button = sender
+        Rating = CInt(button.Text)
+        pbEnergy1.BackgroundImage = My.Resources.energy_empty
+        pbEnergy2.BackgroundImage = My.Resources.energy_empty
+        pbEnergy3.BackgroundImage = My.Resources.energy_empty
+        pbEnergy4.BackgroundImage = My.Resources.energy_empty
+        pbEnergy5.BackgroundImage = My.Resources.energy_empty
+        For i As Integer = 0 To Rating - 1
+            Select Case i
+                Case 0
+                    pbEnergy1.BackgroundImage = My.Resources.energy_filled
+                    Energy = i + 1
+                Case 1
+                    pbEnergy2.BackgroundImage = My.Resources.energy_filled
+                    Energy = i + 1
+                Case 2
+                    pbEnergy3.BackgroundImage = My.Resources.energy_filled
+                    Energy = i + 1
+                Case 3
+                    pbEnergy4.BackgroundImage = My.Resources.energy_filled
+                    Energy = i + 1
+                Case 4
+                    pbEnergy5.BackgroundImage = My.Resources.energy_filled
+                    Energy = i + 1
+            End Select
+        Next i
+        Energy = Rating
+    End Sub
 End Class

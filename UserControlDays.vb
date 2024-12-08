@@ -1,7 +1,8 @@
 ﻿Public Class UserControlDays
     Public DDate As DateTime
     Private savedEmoji As String
-
+    Public Energy As Integer
+    Public Entry As String
     'Constructor to initialize the day
     Public Sub New(day As Integer, month As Integer, year As Integer)
         InitializeComponent()
@@ -19,7 +20,18 @@
         picEmoji.Image = GetEmojiImage(emoji)
         picEmoji.Visible = True
     End Sub
-
+    Public Sub setEnergy(level As Integer)
+        Dim Diary As New Form7()
+        Energy = level
+        If Energy <> 0 Then
+            Energy = level
+        End If
+    End Sub
+    Public Sub setEntry(currentEntry As String)
+        If Entry IsNot "" Then
+            Entry = currentEntry
+        End If
+    End Sub
     ' Helper method to get the emoji image based on the emoji string
     Private Function GetEmojiImage(emoji As String) As Image
         Select Case emoji
@@ -46,7 +58,8 @@
         If Me.ParentForm IsNot Nothing AndAlso TypeOf Me.ParentForm Is Form4 Then
             Diary.Owner = CType(Me.ParentForm, Form4) ' Set Form4 as the owner
         End If
-
+        Diary.Energy = Energy
+        Diary.userEntry = Entry
         Diary.SetDiaryDate(DDate)
         Diary.Show()
     End Sub

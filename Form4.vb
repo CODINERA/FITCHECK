@@ -4,7 +4,10 @@ Imports MySql.Data.MySqlClient
 Public Class Form4
     Dim month As Integer
     Dim year As Integer
+    Private moodEntries As New Dictionary(Of DateTime, String)
     Private diaryEntries As New Dictionary(Of DateTime, String)
+    Private energyEntries As New Dictionary(Of DateTime, Integer)
+
     Private sqlConn As MySqlConnection
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         Dim nextForm As New Form1()
@@ -63,10 +66,10 @@ Public Class Form4
         ' Clear the container before adding new controls
         'daycontainer.Controls.Clear()
 
-        '----------------------Calling LoadDiaryEntries() For Emoji ----------------------'
+        '----------------------Calling LoadmoodEntries() For Emoji ----------------------'
         ' Load diary entries from the database
-        LoadDiaryEntries()
-        '----------------------Calling LoadDiaryEntries() For Emoji ----------------------'
+        LoadmoodEntries(month, year)
+        '----------------------Calling LoadmoodEntries() For Emoji ----------------------'
 
         'DateTime Now = DateTime.Now
         For i = 1 To daysoftheweek - 1
@@ -77,19 +80,25 @@ Public Class Form4
         For i = 1 To days
             Dim ucdays As New UserControlDays(i, month, year)
             ucdays.days(i)
-            AddHandler ucdays.Click, Sub(sender, e) ShowForm7AndSaveEntry(ucdays.DDate)
+            'AddHandler ucdays.Click, Sub(sender, e) ShowForm7AndSaveEntry(ucdays.DDate)
             daycontainer.Controls.Add(ucdays)
 
             ' Update the UserControlDays with the emoji from the dictionary
+            If moodEntries.ContainsKey(ucdays.DDate) Then
+                ucdays.SetEmoji(moodEntries(ucdays.DDate))
+            End If
+            If energyEntries.ContainsKey(ucdays.DDate) Then
+                ucdays.setEnergy(energyEntries(ucdays.DDate))
+            End If
             If diaryEntries.ContainsKey(ucdays.DDate) Then
-                ucdays.SetEmoji(diaryEntries(ucdays.DDate))
+                ucdays.setEntry(diaryEntries(ucdays.DDate))
             End If
         Next i
     End Sub
 
     ' Save the diary entry and emoji to the dictionary
     Public Sub SaveDiaryEntry(entryDate As DateTime, emoji As String)
-        diaryEntries(entryDate) = emoji
+        moodEntries(entryDate) = emoji
     End Sub
 
     Private Sub ShowForm7AndSaveEntry(entryDate As DateTime)
@@ -122,7 +131,7 @@ Public Class Form4
 
         Dim monthname As String = DateTimeFormatInfo.CurrentInfo.GetMonthName(month)
         lbldate.Text = monthname & " " & year
-
+        LoadmoodEntries(month, year)
         Dim Startofthemonth = New DateTime(year, month, 1)
 
         Dim days = DateTime.DaysInMonth(year, month)
@@ -139,12 +148,21 @@ Public Class Form4
             'ucdays.month = monthname
             'ucdays.year = year
             daycontainer.Controls.Add(ucdays)
+            If moodEntries.ContainsKey(ucdays.DDate) Then
+                ucdays.SetEmoji(moodEntries(ucdays.DDate))
+            End If
+            If energyEntries.ContainsKey(ucdays.DDate) Then
+                ucdays.setEnergy(energyEntries(ucdays.DDate))
+            End If
+            If diaryEntries.ContainsKey(ucdays.DDate) Then
+                ucdays.setEntry(diaryEntries(ucdays.DDate))
+            End If
+
         Next i
     End Sub
 
     Private Sub lblPrev_Click(sender As Object, e As EventArgs) Handles lblPrev.Click
         daycontainer.Controls.Clear()
-
         'decrement month to go to prev month
         month -= 1
 
@@ -155,6 +173,7 @@ Public Class Form4
 
         Dim monthname As String = DateTimeFormatInfo.CurrentInfo.GetMonthName(month)
         lbldate.Text = monthname & " " & year
+        LoadmoodEntries(month, year)
 
         Dim Startofthemonth = New DateTime(year, month, 1)
 
@@ -173,39 +192,41 @@ Public Class Form4
             'ucdays.month = monthname
             'ucdays.year = year
             daycontainer.Controls.Add(ucdays)
+            If moodEntries.ContainsKey(ucdays.DDate) Then
+                ucdays.SetEmoji(moodEntries(ucdays.DDate))
+            End If
+            If energyEntries.ContainsKey(ucdays.DDate) Then
+                ucdays.setEnergy(energyEntries(ucdays.DDate))
+            End If
+            If diaryEntries.ContainsKey(ucdays.DDate) Then
+                ucdays.setEntry(diaryEntries(ucdays.DDate))
+            End If
         Next i
 
     End Sub
 
     '------------------------------------------For Displaying Emojis ------------------------------------------'
-    Private Sub LoadDiaryEntries()
+    Private Sub LoadmoodEntries(ByVal Mon, ByVal Yer)
         Try
-            Dim connString As String = "server=localhost;user id=root;password=123;database=fitcheck;"
+            Dim connString As String = "server=localhost;user id=root;password='123123';database=fitcheck;"
             Using conn As New MySqlConnection(connString)
                 conn.Open()
-                Dim sql As String = "SELECT date, mood FROM diary WHERE MONTH(date) = @month AND YEAR(date) = @year"
+                Dim sql As String = "SELECT date, mood , energy_level,diary_entry FROM diary WHERE MONTH(date) = @month AND YEAR(date) = @year"
                 Using cmd As New MySqlCommand(sql, conn)
-                    cmd.Parameters.AddWithValue("@month", month)
-                    cmd.Parameters.AddWithValue("@year", year)
+                    cmd.Parameters.AddWithValue("@month", Mon)
+                    cmd.Parameters.AddWithValue("@year", Yer)
 
                     Using reader As MySqlDataReader = cmd.ExecuteReader()
-                        diaryEntries.Clear()
+                        moodEntries.Clear() ' Clear the existing diary entries
                         While reader.Read()
                             Dim entryDate As DateTime = reader.GetDateTime("date")
-                            'Dim mood As String = reader.GetString("mood")
-                            Dim mood As String = String.Empty
+                            Dim mood As String = If(reader.IsDBNull(reader.GetOrdinal("mood")), String.Empty, reader.GetString("mood"))
+                            moodEntries(entryDate) = mood
+                            Dim energy = If(reader.IsDBNull(reader.GetOrdinal("energy_level")), 0, reader.GetInt32("energy_level"))
+                            energyEntries(entryDate) = energy
+                            Dim diaryEntry = If(reader.IsDBNull(reader.GetOrdinal("diary_entry")), String.Empty, reader.GetString("diary_entry"))
+                            diaryEntries(entryDate) = diaryEntry
 
-                            'If Not reader.IsDBNull(reader.GetOrdinal("mood")) Then
-                            '    Dim todaymood As String = reader.GetString("mood")
-                            '    diaryEntries(entryDate) = mood
-                            'End If
-
-                            If Not reader.IsDBNull(reader.GetOrdinal("mood")) Then
-                                mood = reader.GetString("mood")
-                            Else
-                                mood = "" ' Default or placeholder value End If
-                            End If
-                            diaryEntries(entryDate) = mood
                         End While
                     End Using
                 End Using
@@ -213,6 +234,40 @@ Public Class Form4
         Catch ex As MySqlException
             MessageBox.Show("An error occurred while loading diary entries: " & ex.Message)
         End Try
+        'Try
+        '    Dim connString As String = "server=localhost;user id=root;password='123123';database=fitcheck;"
+        '    Using conn As New MySqlConnection(connString)
+        '        conn.Open()
+        '        Dim sql As String = "SELECT date, mood FROM diary WHERE MONTH(date) = @month AND YEAR(date) = @year"
+        '        Using cmd As New MySqlCommand(sql, conn)
+        '            cmd.Parameters.AddWithValue("@month", month)
+        '            cmd.Parameters.AddWithValue("@year", year)
+
+        '            Using reader As MySqlDataReader = cmd.ExecuteReader()
+        '                moodEntries.Clear()
+        '                While reader.Read()
+        '                    Dim entryDate As DateTime = reader.GetDateTime("date")
+        '                    'Dim mood As String = reader.GetString("mood")
+        '                    Dim mood As String = String.Empty
+
+        '                    'If Not reader.IsDBNull(reader.GetOrdinal("mood")) Then
+        '                    '    Dim todaymood As String = reader.GetString("mood")
+        '                    '    moodEntries(entryDate) = mood
+        '                    'End If
+
+        '                    If Not reader.IsDBNull(reader.GetOrdinal("mood")) Then
+        '                        mood = reader.GetString("mood")
+        '                    Else
+        '                        mood = "" ' Default or placeholder value End If
+        '                    End If
+        '                    moodEntries(entryDate) = mood
+        '                End While
+        '            End Using
+        '        End Using
+        '    End Using
+        'Catch ex As MySqlException
+        '    MessageBox.Show("An error occurred while loading diary entries: " & ex.Message)
+        'End Try
     End Sub
     'Private Sub OpenForm7()
     '    Dim form7 As New Form7()
@@ -233,13 +288,15 @@ Public Class Form4
 
         ' Clear existing entries
         daycontainer.Controls.Clear()
-
+        dispDays()
         ' Fetch all diary entries
         Dim allEntries As New List(Of DiaryEntry)
         Try
-            sqlConn.Open()
+            Dim connString As String = "server=localhost;user id=root;password='123123';database=fitcheck;"
+            Dim conn As New MySqlConnection(connString)
+            conn.Open()
             Dim sql As String = "SELECT * FROM diary"
-            Dim cmd As MySqlCommand = sqlConn.CreateCommand()
+            Dim cmd As MySqlCommand = conn.CreateCommand()
             cmd.CommandText = sql
             Dim reader As MySqlDataReader = cmd.ExecuteReader()
 
@@ -249,24 +306,35 @@ Public Class Form4
                 entry.Date = reader("date")
                 entry.DiaryEntry = reader("diary_entry")
                 entry.Mood = If(IsDBNull(reader("mood")), String.Empty, reader("mood").ToString())
+                entry.Energy = If(IsDBNull(reader("energy_level")), 0, Convert.ToInt32(reader("energy_level")))
                 allEntries.Add(entry)
             End While
-
+            'MessageBox.Show()
             reader.Close()
-            sqlConn.Close()
+            conn.Close()
         Catch ex As MySqlException
             MessageBox.Show("An error occurred while fetching entries: " & ex.Message)
         End Try
 
         ' Load the entries into the calendar
-        LoadDiaryEntries(allEntries)
+        'LoadmoodEntries(allEntries)
 
-        MessageBox.Show("Calendar refreshed!")
+        'MessageBox.Show("Calendar refreshed!")
     End Sub
     Public Class DiaryEntry
         Public Property UserId As String
         Public Property [Date] As Date
         Public Property DiaryEntry As String
         Public Property Mood As String
+        Public Property Energy As Integer
     End Class
+
+    'Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton1.Click
+    '    Guna2GradientButton1.Enabled = False
+    '    daycontainer.Controls.Clear()
+    '    RefreshCalendar()
+
+    '    Guna2GradientButton1.Enabled = True
+    'End Sub
+
 End Class

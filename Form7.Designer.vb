@@ -159,12 +159,13 @@ Partial Class Form7
         Me.pbEnergy5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.pbEnergy5.FillColor = System.Drawing.Color.Transparent
         Me.pbEnergy5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.pbEnergy5.ForeColor = System.Drawing.Color.White
+        Me.pbEnergy5.ForeColor = System.Drawing.Color.Transparent
         Me.pbEnergy5.Location = New System.Drawing.Point(207, 3)
         Me.pbEnergy5.Name = "pbEnergy5"
         Me.pbEnergy5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.pbEnergy5.Size = New System.Drawing.Size(45, 45)
         Me.pbEnergy5.TabIndex = 9
+        Me.pbEnergy5.Text = "5"
         '
         'pbEnergy4
         '
@@ -176,12 +177,13 @@ Partial Class Form7
         Me.pbEnergy4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.pbEnergy4.FillColor = System.Drawing.Color.Transparent
         Me.pbEnergy4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.pbEnergy4.ForeColor = System.Drawing.Color.White
+        Me.pbEnergy4.ForeColor = System.Drawing.Color.Transparent
         Me.pbEnergy4.Location = New System.Drawing.Point(156, 3)
         Me.pbEnergy4.Name = "pbEnergy4"
         Me.pbEnergy4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.pbEnergy4.Size = New System.Drawing.Size(45, 45)
         Me.pbEnergy4.TabIndex = 8
+        Me.pbEnergy4.Text = "4"
         '
         'pbEnergy3
         '
@@ -193,12 +195,13 @@ Partial Class Form7
         Me.pbEnergy3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.pbEnergy3.FillColor = System.Drawing.Color.Transparent
         Me.pbEnergy3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.pbEnergy3.ForeColor = System.Drawing.Color.White
+        Me.pbEnergy3.ForeColor = System.Drawing.Color.Transparent
         Me.pbEnergy3.Location = New System.Drawing.Point(105, 3)
         Me.pbEnergy3.Name = "pbEnergy3"
         Me.pbEnergy3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.pbEnergy3.Size = New System.Drawing.Size(45, 45)
         Me.pbEnergy3.TabIndex = 7
+        Me.pbEnergy3.Text = "3"
         '
         'pbEnergy2
         '
@@ -210,12 +213,13 @@ Partial Class Form7
         Me.pbEnergy2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.pbEnergy2.FillColor = System.Drawing.Color.Transparent
         Me.pbEnergy2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.pbEnergy2.ForeColor = System.Drawing.Color.White
+        Me.pbEnergy2.ForeColor = System.Drawing.Color.Transparent
         Me.pbEnergy2.Location = New System.Drawing.Point(54, 3)
         Me.pbEnergy2.Name = "pbEnergy2"
         Me.pbEnergy2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.pbEnergy2.Size = New System.Drawing.Size(45, 45)
         Me.pbEnergy2.TabIndex = 6
+        Me.pbEnergy2.Text = "2"
         '
         'pbEnergy1
         '
@@ -227,12 +231,13 @@ Partial Class Form7
         Me.pbEnergy1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.pbEnergy1.FillColor = System.Drawing.Color.Transparent
         Me.pbEnergy1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.pbEnergy1.ForeColor = System.Drawing.Color.White
+        Me.pbEnergy1.ForeColor = System.Drawing.Color.Transparent
         Me.pbEnergy1.Location = New System.Drawing.Point(3, 3)
         Me.pbEnergy1.Name = "pbEnergy1"
         Me.pbEnergy1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.pbEnergy1.Size = New System.Drawing.Size(45, 45)
         Me.pbEnergy1.TabIndex = 5
+        Me.pbEnergy1.Text = "1"
         '
         'Guna2HtmlLabel4
         '
