@@ -12,7 +12,7 @@ Public Class Form7
 
     Dim Server As String = "localhost"
     Dim username As String = "root"
-    Dim password As String = "123123"
+    Dim password As String = "123"
     Dim database As String = "fitcheck"
     Dim databaseDate As String
     ''---------- Other Refresh Logic ----------'
@@ -217,5 +217,9 @@ Public Class Form7
             End Select
         Next i
         Energy = Rating
+    End Sub
+
+    Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint
+
     End Sub
 End Class

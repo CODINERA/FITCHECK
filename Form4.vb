@@ -208,7 +208,7 @@ Public Class Form4
     '------------------------------------------For Displaying Emojis ------------------------------------------'
     Private Sub LoadmoodEntries(ByVal Mon, ByVal Yer)
         Try
-            Dim connString As String = "server=localhost;user id=root;password='123123';database=fitcheck;"
+            Dim connString As String = "server=localhost;user id=root;password='123';database=fitcheck;"
             Using conn As New MySqlConnection(connString)
                 conn.Open()
                 Dim sql As String = "SELECT date, mood , energy_level,diary_entry FROM diary WHERE MONTH(date) = @month AND YEAR(date) = @year"
@@ -234,65 +234,18 @@ Public Class Form4
         Catch ex As MySqlException
             MessageBox.Show("An error occurred while loading diary entries: " & ex.Message)
         End Try
-        'Try
-        '    Dim connString As String = "server=localhost;user id=root;password='123123';database=fitcheck;"
-        '    Using conn As New MySqlConnection(connString)
-        '        conn.Open()
-        '        Dim sql As String = "SELECT date, mood FROM diary WHERE MONTH(date) = @month AND YEAR(date) = @year"
-        '        Using cmd As New MySqlCommand(sql, conn)
-        '            cmd.Parameters.AddWithValue("@month", month)
-        '            cmd.Parameters.AddWithValue("@year", year)
-
-        '            Using reader As MySqlDataReader = cmd.ExecuteReader()
-        '                moodEntries.Clear()
-        '                While reader.Read()
-        '                    Dim entryDate As DateTime = reader.GetDateTime("date")
-        '                    'Dim mood As String = reader.GetString("mood")
-        '                    Dim mood As String = String.Empty
-
-        '                    'If Not reader.IsDBNull(reader.GetOrdinal("mood")) Then
-        '                    '    Dim todaymood As String = reader.GetString("mood")
-        '                    '    moodEntries(entryDate) = mood
-        '                    'End If
-
-        '                    If Not reader.IsDBNull(reader.GetOrdinal("mood")) Then
-        '                        mood = reader.GetString("mood")
-        '                    Else
-        '                        mood = "" ' Default or placeholder value End If
-        '                    End If
-        '                    moodEntries(entryDate) = mood
-        '                End While
-        '            End Using
-        '        End Using
-        '    End Using
-        'Catch ex As MySqlException
-        '    MessageBox.Show("An error occurred while loading diary entries: " & ex.Message)
-        'End Try
     End Sub
-    'Private Sub OpenForm7()
-    '    Dim form7 As New Form7()
-    '    ' Subscribe to the DataSaved event
-    '    AddHandler form7.DataSaved, AddressOf OnDataSaved
-    '    form7.Show()
-    'End Sub
-
-    '' Event handler for DataSaved event
-    'Private Sub OnDataSaved(sender As Object, e As EventArgs)
-    '    RefreshCalendar()
-    'End Sub
 
     Public Sub RefreshCalendar()
-        'MessageBox.Show("RefreshCalendar is called.")
-        '' Call dispDays to refresh the calendar
-        'dispDays()
 
         ' Clear existing entries
         daycontainer.Controls.Clear()
         dispDays()
+
         ' Fetch all diary entries
         Dim allEntries As New List(Of DiaryEntry)
         Try
-            Dim connString As String = "server=localhost;user id=root;password='123123';database=fitcheck;"
+            Dim connString As String = "server=localhost;user id=root;password='123';database=fitcheck;"
             Dim conn As New MySqlConnection(connString)
             conn.Open()
             Dim sql As String = "SELECT * FROM diary"
@@ -316,10 +269,6 @@ Public Class Form4
             MessageBox.Show("An error occurred while fetching entries: " & ex.Message)
         End Try
 
-        ' Load the entries into the calendar
-        'LoadmoodEntries(allEntries)
-
-        'MessageBox.Show("Calendar refreshed!")
     End Sub
     Public Class DiaryEntry
         Public Property UserId As String
@@ -329,12 +278,7 @@ Public Class Form4
         Public Property Energy As Integer
     End Class
 
-    'Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton1.Click
-    '    Guna2GradientButton1.Enabled = False
-    '    daycontainer.Controls.Clear()
-    '    RefreshCalendar()
+    Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint
 
-    '    Guna2GradientButton1.Enabled = True
-    'End Sub
-
+    End Sub
 End Class

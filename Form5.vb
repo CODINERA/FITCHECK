@@ -13,7 +13,7 @@ Public Class Form5
     Public updatedExValue3 As Integer
     Dim Server As String = "localhost"
     Dim username As String = "root"
-    Dim password As String = "123123"
+    Dim password As String = "123"
     Dim database As String = "fitcheck"
     Private butmap As Bitmap
     Dim daysDone As Integer
@@ -66,9 +66,64 @@ Public Class Form5
         Dim WorkoutF As New Form6()
         Dim button As Guna2Button = sender
         WorkoutF.WorkoutName = button.Text
-        Dim W1text As String = "this is a push up workout"
-        Dim W2text As String = "this is a squats workout"
-        Dim W3text As String = "this is a Running workout"
+        Dim W1text As String = "
+        1. Prepare Yourself
+            - Begin with a 5-minute warm-up to loosen your muscles. Include light stretches, arm 
+              circles, and a few jumping jacks.
+
+        2. Set Your Timee
+            - Ensure your timer is ready to track your push-up session.
+
+        3. Push-Up Routine
+            - Perform 1 set of push-ups, aiming for the best form and effort.
+            - Rest for 1-2 minutes between sets.
+            - Repeat the routine 3 times today for optimal results.
+        
+        4. Start the Timer
+            - When ready, press Start on your timer and begin your push-ups!
+
+        Stay consistent and focus on proper form. Let’s do this!"
+
+        Dim W2text As String = "
+        1. Warm-Up First
+           - Start with a 5-minute warm-up** to prepare your muscles. Include dynamic 
+             stretches like leg swings, bodyweight lunges, and a few jumping jacks.  
+
+        2. repare Your Timer 
+           - Get your timer ready to track your squat session.  
+
+        3. Squat Routine
+           - Perform 1 set of squats**, focusing on proper form and depth.  
+           - Rest for 1-2 minutes between sets.  
+           - Repeat the routine 3 times today for best results.  
+
+        4. Start the Timer
+           - Once you’re ready, press Start on your timer and begin your squats!  
+
+        Stay consistent and maintain good form. You’ve got this!"
+
+
+
+        Dim W3text As String = "
+        1. Warm-Up First
+           - Start with a 5-10 minute warm-up to prepare your body. Include light jogging, 
+             dynamic stretches (like leg swings and arm circles), and walking lunges to loosen up.  
+
+        2. Prepare Your Timer
+           - Ensure your timer is ready to track your running session.  
+
+        3. Running Routine 
+           - Complete 1 running session.  
+           - Rest for 5-10 minutes between sessions to recover.  
+           - Repeat this running routine 3 times today for maximum impact.  
+
+        4. Start the Timer  
+           - When ready, press Start on your timer and begin your run!  
+
+        Stay hydrated, and remember to cool down with stretches after completing 
+        your routine. Let’s hit the ground running!"
+
+
         If button.Name = "W1" Then
             WorkoutF.Workoutdesc = W1text
         ElseIf button.Name = "W2" Then
@@ -93,8 +148,9 @@ Public Class Form5
     Private Function GetWorkoutProgress(workoutReco As String) As Integer
         Dim Query As String = "SELECT workout_progress FROM workout WHERE user_id = @UserID AND workout_reco = @WorkOutReco"
         Dim cmd = New MySqlCommand(Query, sqlConn)
-        cmd.Parameters.AddWithValue("@UserID", "1")
+        cmd.Parameters.AddWithValue("@UserID", "3")
         cmd.Parameters.AddWithValue("@WorkOutReco", workoutReco)
+
         Dim currentProgress As Integer = Convert.ToInt32(cmd.ExecuteScalar())
         Dim newProgress As Integer = updatedExValue ' Assuming updatedExValue is the new progress value
         'MessageBox.Show(newProgress + " " + currentProgress)
@@ -107,8 +163,10 @@ Public Class Form5
             Progressed = False
             ' If the data hasn't changed, display a message or skip the update
             MessageBox.Show("No changes detected. Progress remains the same.")
+            Return currentProgress
         End If
     End Function
+
     Private Sub UpdateProgress(progressBar As Guna.UI2.WinForms.Guna2CircleProgressBar, label As Guna.UI2.WinForms.Guna2HtmlLabel, updatedExValue As Integer)
         If updatedExValue <> 0 Then
             Dim daysDone As Integer = updatedExValue \ 3 ' Integer division to get full days
@@ -132,17 +190,18 @@ Public Class Form5
             Next i
         End If
     End Sub
+
     Private Sub MainFunction()
         Try
             sqlConn.Open()
             Dim checkQuery As String = "SELECT COUNT(*) FROM workout WHERE user_id = @UserID "
             Dim cmdr = New MySqlCommand(checkQuery, sqlConn)
-            cmdr.Parameters.AddWithValue("@UserID", "1")
+            cmdr.Parameters.AddWithValue("@UserID", "3")
             Dim count As Integer = Convert.ToInt32(cmdr.ExecuteScalar())  ' Get the count of records
 
             If count > 0 Then
                 ' Retrieve workout progress for Push-Up, Squats, and Running
-                updatedExValue = GetWorkoutProgress("Push-UP")
+                updatedExValue = GetWorkoutProgress("Push-Up")
                 updatedExValue2 = GetWorkoutProgress("Squats")
                 updatedExValue3 = GetWorkoutProgress("Running")
             Else
@@ -170,4 +229,4 @@ Public Class Form5
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         MainFunction()
     End Sub
-End Class'that is not my code yeaaaaa'
+End Class

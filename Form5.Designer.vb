@@ -122,10 +122,10 @@ Partial Class Form5
         Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
         Me.Guna2Button1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
-        Me.Guna2Button1.Location = New System.Drawing.Point(566, 28)
+        Me.Guna2Button1.Location = New System.Drawing.Point(863, 288)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.ShadowDecoration.BorderRadius = 3
-        Me.Guna2Button1.Size = New System.Drawing.Size(117, 31)
+        Me.Guna2Button1.Size = New System.Drawing.Size(101, 27)
         Me.Guna2Button1.TabIndex = 47
         Me.Guna2Button1.Text = "Recalculate"
         '
@@ -271,7 +271,7 @@ Partial Class Form5
         Me.Guna2Panel13.BorderColor = System.Drawing.Color.SteelBlue
         Me.Guna2Panel13.BorderThickness = 2
         Me.Guna2Panel13.Controls.Add(Me.Guna2HtmlLabel1)
-        Me.Guna2Panel13.Location = New System.Drawing.Point(541, 296)
+        Me.Guna2Panel13.Location = New System.Drawing.Point(536, 300)
         Me.Guna2Panel13.Name = "Guna2Panel13"
         Me.Guna2Panel13.Size = New System.Drawing.Size(181, 31)
         Me.Guna2Panel13.TabIndex = 4
@@ -294,7 +294,7 @@ Partial Class Form5
         Me.Guna2Panel5.Controls.Add(Me.W1)
         Me.Guna2Panel5.Location = New System.Drawing.Point(288, 86)
         Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(676, 197)
+        Me.Guna2Panel5.Size = New System.Drawing.Size(676, 189)
         Me.Guna2Panel5.TabIndex = 3
         '
         'W3
@@ -360,9 +360,9 @@ Partial Class Form5
         Me.Guna2Panel3.Controls.Add(Me.Guna2CircleProgressBar3)
         Me.Guna2Panel3.Controls.Add(Me.Guna2CircleProgressBar2)
         Me.Guna2Panel3.Controls.Add(Me.Guna2CircleProgressBar1)
-        Me.Guna2Panel3.Location = New System.Drawing.Point(288, 314)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(288, 321)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(676, 197)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(676, 184)
         Me.Guna2Panel3.TabIndex = 2
         '
         'Guna2CircleProgressBar3
@@ -372,7 +372,7 @@ Partial Class Form5
         Me.Guna2CircleProgressBar3.FillColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(223, Byte), Integer))
         Me.Guna2CircleProgressBar3.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.Guna2CircleProgressBar3.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleProgressBar3.Location = New System.Drawing.Point(494, 19)
+        Me.Guna2CircleProgressBar3.Location = New System.Drawing.Point(494, 13)
         Me.Guna2CircleProgressBar3.Minimum = 0
         Me.Guna2CircleProgressBar3.Name = "Guna2CircleProgressBar3"
         Me.Guna2CircleProgressBar3.ProgressColor2 = System.Drawing.Color.Teal
@@ -385,7 +385,7 @@ Partial Class Form5
         '
         Me.Guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel8.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(60, 55)
+        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(60, 58)
         Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
         Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(33, 39)
         Me.Guna2HtmlLabel8.TabIndex = 0
@@ -398,7 +398,7 @@ Partial Class Form5
         Me.Guna2CircleProgressBar2.FillColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(223, Byte), Integer))
         Me.Guna2CircleProgressBar2.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.Guna2CircleProgressBar2.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleProgressBar2.Location = New System.Drawing.Point(262, 19)
+        Me.Guna2CircleProgressBar2.Location = New System.Drawing.Point(262, 13)
         Me.Guna2CircleProgressBar2.Minimum = 0
         Me.Guna2CircleProgressBar2.Name = "Guna2CircleProgressBar2"
         Me.Guna2CircleProgressBar2.ProgressColor2 = System.Drawing.Color.Teal
@@ -411,7 +411,7 @@ Partial Class Form5
         '
         Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(60, 55)
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(61, 58)
         Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
         Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(33, 39)
         Me.Guna2HtmlLabel7.TabIndex = 0
@@ -424,7 +424,7 @@ Partial Class Form5
         Me.Guna2CircleProgressBar1.FillColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(223, Byte), Integer))
         Me.Guna2CircleProgressBar1.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.Guna2CircleProgressBar1.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleProgressBar1.Location = New System.Drawing.Point(34, 19)
+        Me.Guna2CircleProgressBar1.Location = New System.Drawing.Point(34, 13)
         Me.Guna2CircleProgressBar1.Minimum = 0
         Me.Guna2CircleProgressBar1.Name = "Guna2CircleProgressBar1"
         Me.Guna2CircleProgressBar1.ProgressColor2 = System.Drawing.Color.Teal
@@ -437,7 +437,7 @@ Partial Class Form5
         '
         Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(60, 55)
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(61, 58)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
         Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(33, 39)
         Me.Guna2HtmlLabel6.TabIndex = 0
